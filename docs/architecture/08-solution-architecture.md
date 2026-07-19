@@ -472,6 +472,6 @@ This document feeds into:
 
 - [Database Design](./09-database-design.md)
 - [API Specification](./10-api-specification.md)
-- [UX/UI Modernization](./11-ux-ui-modernization.md)
-- [Technical Debt Report](./12-technical-debt-report.md)
-- [Migration Strategy](./14-migration-strategy.md)
+- [Frontend Architecture](./11-frontend-architecture.md)
+- [Backend Architecture](./12-backend-architecture.md)
+- [Migration Strategy](./16-migration-strategy.md)

@@ -368,6 +368,6 @@ This assessment feeds into the following documents:
 
 - [Business Process Analysis (AS-IS)](./03-business-process-analysis-as-is.md)
 - [Target Operating Model](./04-target-operating-model.md)
-- [Guiding Architecture Principles](./05-architecture-principles.md)
+- [Guiding Architecture Principles](./05-guiding-architecture-principles.md)
 - [Domain Model](./06-domain-model.md)
 - [Business Requirements Document](./07-business-requirements-document.md)

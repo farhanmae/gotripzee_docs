@@ -8,7 +8,7 @@
 | Version | 1.0 |
 | Status | Draft |
 | Repository | farhanmae/gotripzee_docs |
-| Related Documents | [Current System Assessment](./02-current-system-assessment.md), [Business Process Analysis (AS-IS)](./03-business-process-analysis-as-is.md), [Guiding Architecture Principles](./05-architecture-principles.md) |
+| Related Documents | [Current System Assessment](./02-current-system-assessment.md), [Business Process Analysis (AS-IS)](./03-business-process-analysis-as-is.md), [Guiding Architecture Principles](./05-guiding-architecture-principles.md) |
 
 ## 1. Purpose
 
@@ -306,7 +306,7 @@ The target operating model defines GoTripzee as a structured travel business pla
 
 This document feeds into:
 
-- [Guiding Architecture Principles](./05-architecture-principles.md)
+- [Guiding Architecture Principles](./05-guiding-architecture-principles.md)
 - [Domain Model](./06-domain-model.md)
 - [Business Requirements Document](./07-business-requirements-document.md)
 - [Solution Architecture](./08-solution-architecture.md)

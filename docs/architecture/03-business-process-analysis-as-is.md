@@ -8,7 +8,7 @@
 | Version | 1.0 |
 | Status | Draft |
 | Repository | farhanmae/gotripzee_docs |
-| Related Documents | [Current System Assessment](./02-current-system-assessment.md), [Target Operating Model](./04-target-operating-model.md), [Guiding Architecture Principles](./05-architecture-principles.md) |
+| Related Documents | [Current System Assessment](./02-current-system-assessment.md), [Target Operating Model](./04-target-operating-model.md), [Guiding Architecture Principles](./05-guiding-architecture-principles.md) |
 
 ## 1. Purpose
 
@@ -409,6 +409,6 @@ The AS-IS process model shows a consistent commercial pattern across products: d
 This document feeds directly into:
 
 - [Target Operating Model](./04-target-operating-model.md)
-- [Guiding Architecture Principles](./05-architecture-principles.md)
+- [Guiding Architecture Principles](./05-guiding-architecture-principles.md)
 - [Domain Model](./06-domain-model.md)
 - [Business Requirements Document](./07-business-requirements-document.md)
