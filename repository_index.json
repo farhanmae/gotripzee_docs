@@ -1,0 +1,5368 @@
+{
+  "generated_at": "2026-07-19T10:19:54.816Z",
+  "repository": "farhanmae/gotripzee",
+  "root": "/Users/farhanerooth/Dev/Docs/trip",
+  "confirmation_method": "Static source inspection; Drupal runtime/bootstrap unavailable in local shell.",
+  "overview": {
+    "purpose": "GoTripzee Drupal Commerce travel booking site with catalog products for packages, stays, cabs, trips/weekend trips, OTP login/verification, Razorpay payment integration, Webforms, Views, and custom Tripzee theme.",
+    "architecture": "Drupal 10 recommended-project using repository root as web root; custom modules in modules/custom; custom theme in themes/custom/tripzee; active configuration export in config/sync; front-end libraries vendored under libraries.",
+    "technology_stack": [
+      "Drupal 10",
+      "Drupal Commerce 2.x",
+      "PHP packages via Composer",
+      "Twig",
+      "jQuery/Drupal behaviors",
+      "Bootstrap 5 theme base",
+      "Razorpay",
+      "Textlocal SMS",
+      "Search API database backend",
+      "Webform",
+      "Views"
+    ],
+    "languages": [
+      "PHP",
+      "YAML",
+      "Twig",
+      "JavaScript",
+      "SCSS",
+      "CSS"
+    ],
+    "major_dependencies": [
+      {
+        "name": "composer/installers",
+        "version": "^2.0"
+      },
+      {
+        "name": "cweagans/composer-patches",
+        "version": "^1.7"
+      },
+      {
+        "name": "drupal/admin_toolbar",
+        "version": "^3.4"
+      },
+      {
+        "name": "drupal/bat",
+        "version": "^11.0"
+      },
+      {
+        "name": "drupal/bee_hotel",
+        "version": "2.21.0"
+      },
+      {
+        "name": "drupal/best_selling_products",
+        "version": "^3.13"
+      },
+      {
+        "name": "drupal/blazy",
+        "version": "^3.0"
+      },
+      {
+        "name": "drupal/bootstrap5",
+        "version": "^3.0"
+      },
+      {
+        "name": "drupal/ckeditor5_icons",
+        "version": "^1.0@RC"
+      },
+      {
+        "name": "drupal/ckeditor_accordion",
+        "version": "^2.2"
+      },
+      {
+        "name": "drupal/colorbox",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/colorbox_inline",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/colorbox_media_video",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/commerce",
+        "version": "^2.38"
+      },
+      {
+        "name": "drupal/commerce_add_to_cart_link",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/commerce_autosku",
+        "version": "^2.1"
+      },
+      {
+        "name": "drupal/commerce_bulk",
+        "version": "^2.0@beta"
+      },
+      {
+        "name": "drupal/commerce_buy_now",
+        "version": "^1.0@RC"
+      },
+      {
+        "name": "drupal/commerce_cart_redirection",
+        "version": "^3.2"
+      },
+      {
+        "name": "drupal/commerce_checkout_order_fields",
+        "version": "^1.2"
+      },
+      {
+        "name": "drupal/commerce_email",
+        "version": "^1.3"
+      },
+      {
+        "name": "drupal/commerce_invoice",
+        "version": "^2.0@RC"
+      },
+      {
+        "name": "drupal/commerce_pado",
+        "version": "^1.3"
+      },
+      {
+        "name": "drupal/commerce_partial_payments",
+        "version": "^3.0"
+      },
+      {
+        "name": "drupal/commerce_pricelist",
+        "version": "^2.10"
+      },
+      {
+        "name": "drupal/commerce_product_limits",
+        "version": "^1.0"
+      },
+      {
+        "name": "drupal/commerce_stock",
+        "version": "^1.3"
+      },
+      {
+        "name": "drupal/content_planner",
+        "version": "^1.1"
+      },
+      {
+        "name": "drupal/core-composer-scaffold",
+        "version": "^10.2"
+      },
+      {
+        "name": "drupal/core-project-message",
+        "version": "^10.2"
+      },
+      {
+        "name": "drupal/core-recommended",
+        "version": "^10.2"
+      },
+      {
+        "name": "drupal/ctools",
+        "version": "^4.1"
+      },
+      {
+        "name": "drupal/date_filter",
+        "version": "^1.0"
+      },
+      {
+        "name": "drupal/devel",
+        "version": "^5.1"
+      },
+      {
+        "name": "drupal/dynamic_entity_reference",
+        "version": "^3.2"
+      },
+      {
+        "name": "drupal/entity_clone",
+        "version": "^2.0@beta"
+      },
+      {
+        "name": "drupal/entity_print",
+        "version": "^2.14"
+      },
+      {
+        "name": "drupal/entityqueue",
+        "version": "^1.9"
+      },
+      {
+        "name": "drupal/field_group",
+        "version": "^4.0"
+      },
+      {
+        "name": "drupal/fivestar",
+        "version": "^1.0@alpha"
+      },
+      {
+        "name": "drupal/flexslider",
+        "version": "^3.0@alpha"
+      },
+      {
+        "name": "drupal/fontawesome",
+        "version": "^2.26"
+      },
+      {
+        "name": "drupal/fullcalendar_library",
+        "version": "^3.0"
+      },
+      {
+        "name": "drupal/gin",
+        "version": "^3.0@RC"
+      },
+      {
+        "name": "drupal/gin_toolbar",
+        "version": "^1.0@rc"
+      },
+      {
+        "name": "drupal/google_map_field",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/google_tag",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/hook_event_dispatcher",
+        "version": "^4.0@RC"
+      },
+      {
+        "name": "drupal/jquery_ui_datepicker",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/mailsystem",
+        "version": "^4.4"
+      },
+      {
+        "name": "drupal/masquerade",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/menu_item_role_access",
+        "version": "^2.1"
+      },
+      {
+        "name": "drupal/menu_link_attributes",
+        "version": "^1.3"
+      },
+      {
+        "name": "drupal/metatag",
+        "version": "^2.1"
+      },
+      {
+        "name": "drupal/node_read_time",
+        "version": "^1.15"
+      },
+      {
+        "name": "drupal/office_hours",
+        "version": "^1.21"
+      },
+      {
+        "name": "drupal/otp_field",
+        "version": "^1.0@beta"
+      },
+      {
+        "name": "drupal/pages_restriction",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/paragraphs_ee",
+        "version": "^10.0"
+      },
+      {
+        "name": "drupal/paragraphs_features",
+        "version": "^2.0@beta"
+      },
+      {
+        "name": "drupal/paragraphs_jquery_ui_accordion",
+        "version": "^1.6"
+      },
+      {
+        "name": "drupal/password_eye",
+        "version": "^2.1"
+      },
+      {
+        "name": "drupal/pathauto",
+        "version": "^1.12"
+      },
+      {
+        "name": "drupal/phone_number",
+        "version": "^2.0@alpha"
+      },
+      {
+        "name": "drupal/profile",
+        "version": "^1.10"
+      },
+      {
+        "name": "drupal/range_slider",
+        "version": "^2.1"
+      },
+      {
+        "name": "drupal/recaptcha_v3",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/redirect",
+        "version": "^1.9"
+      },
+      {
+        "name": "drupal/rules",
+        "version": "^4.0"
+      },
+      {
+        "name": "drupal/search_api",
+        "version": "^1.34"
+      },
+      {
+        "name": "drupal/show_email",
+        "version": "^1.2"
+      },
+      {
+        "name": "drupal/simple_pass_reset",
+        "version": "^1.2"
+      },
+      {
+        "name": "drupal/simple_sitemap",
+        "version": "^4.2"
+      },
+      {
+        "name": "drupal/simpleautologout",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/slick",
+        "version": "^3.0"
+      },
+      {
+        "name": "drupal/slick_extras",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/slick_lightbox",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/slick_views",
+        "version": "^3.0"
+      },
+      {
+        "name": "drupal/sms_fast2sms",
+        "version": "^1.0@alpha"
+      },
+      {
+        "name": "drupal/smsframework",
+        "version": "^2.2@RC"
+      },
+      {
+        "name": "drupal/smtp",
+        "version": "^1.2"
+      },
+      {
+        "name": "drupal/splide",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/splidebox",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/stringoverrides",
+        "version": "^1.8"
+      },
+      {
+        "name": "drupal/symfony_mailer",
+        "version": "^1.4"
+      },
+      {
+        "name": "drupal/terms_of_use",
+        "version": "^2.4"
+      },
+      {
+        "name": "drupal/token",
+        "version": "^1.14"
+      },
+      {
+        "name": "drupal/twig_tweak",
+        "version": "^3.2"
+      },
+      {
+        "name": "drupal/typed_data",
+        "version": "^2.1"
+      },
+      {
+        "name": "drupal/video",
+        "version": "^3.0"
+      },
+      {
+        "name": "drupal/views_accordion",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/views_autocomplete_filters",
+        "version": "^2.0"
+      },
+      {
+        "name": "drupal/views_conditional",
+        "version": "^1.9"
+      },
+      {
+        "name": "drupal/views_field_view",
+        "version": "^1.0@beta"
+      },
+      {
+        "name": "drupal/views_pdf",
+        "version": "^3.0@alpha"
+      },
+      {
+        "name": "drupal/webform",
+        "version": "^6.2"
+      },
+      {
+        "name": "drupal/webform_views",
+        "version": "^5.2"
+      },
+      {
+        "name": "drush/drush",
+        "version": "^13.3"
+      },
+      {
+        "name": "mikehaertl/phpwkhtmltopdf",
+        "version": "~2.1"
+      },
+      {
+        "name": "razorpay/razorpay",
+        "version": "^2.9"
+      },
+      {
+        "name": "roomify/bat",
+        "version": "^1.4"
+      },
+      {
+        "name": "tecnickcom/tcpdf",
+        "version": "~6"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "cab_booking",
+      "label": "Cab Booking",
+      "path": "modules/custom/cab_booking",
+      "description": "Custom module to simplify the cab booking.",
+      "package": "Custom",
+      "core_version_requirement": "^10",
+      "dependencies": [],
+      "files": [
+        "modules/custom/cab_booking/cab_booking.info.yml",
+        "modules/custom/cab_booking/cab_booking.libraries.yml",
+        "modules/custom/cab_booking/cab_booking.module",
+        "modules/custom/cab_booking/cab_booking_old.module",
+        "modules/custom/cab_booking/js/cab_booking.js"
+      ],
+      "entry_points": [
+        "modules/custom/cab_booking/cab_booking.module",
+        "modules/custom/cab_booking/cab_booking.libraries.yml"
+      ],
+      "hooks": [
+        {
+          "name": "cab_booking_form_commerce_order_item_add_to_cart_form_alter",
+          "file": "modules/custom/cab_booking/cab_booking.module",
+          "line": 25
+        },
+        {
+          "name": "cab_booking_availability_check",
+          "file": "modules/custom/cab_booking/cab_booking.module",
+          "line": 62
+        },
+        {
+          "name": "getDatesBetween",
+          "file": "modules/custom/cab_booking/cab_booking.module",
+          "line": 198
+        },
+        {
+          "name": "cab_booking_commerce_order_item_presave",
+          "file": "modules/custom/cab_booking/cab_booking.module",
+          "line": 217
+        },
+        {
+          "name": "cab_booking_availability_check_submit",
+          "file": "modules/custom/cab_booking/cab_booking.module",
+          "line": 236
+        }
+      ],
+      "has_routing": false,
+      "has_services": false,
+      "has_permissions": false,
+      "libraries": [
+        "modules/custom/cab_booking/cab_booking.libraries.yml"
+      ]
+    },
+    {
+      "name": "drupal_commerce_razorpay",
+      "label": "Commerce Razorpay",
+      "path": "modules/custom/drupal_commerce_razorpay",
+      "description": "Provides Commerce integration for the Razorpay Payments.",
+      "package": "Commerce (Custom)",
+      "core_version_requirement": "^10",
+      "dependencies": [
+        "commerce_payment"
+      ],
+      "files": [
+        "modules/custom/drupal_commerce_razorpay/config/schema/drupal_commerce_razorpay.schema.yml",
+        "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.info.yml",
+        "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.libraries.yml",
+        "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml",
+        "modules/custom/drupal_commerce_razorpay/js/drupal_commerce_razorpay.js",
+        "modules/custom/drupal_commerce_razorpay/src/AutoWebhook.php",
+        "modules/custom/drupal_commerce_razorpay/src/Controller/IPNController.php",
+        "modules/custom/drupal_commerce_razorpay/src/Controller/RzpController.php",
+        "modules/custom/drupal_commerce_razorpay/src/Plugin/Commerce/PaymentGateway/RazorpayCheckout.php",
+        "modules/custom/drupal_commerce_razorpay/src/Plugin/Commerce/PaymentGateway/RazorpayInterface.php",
+        "modules/custom/drupal_commerce_razorpay/src/PluginForm/RazorpayForm.php"
+      ],
+      "entry_points": [
+        "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml",
+        "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.libraries.yml"
+      ],
+      "hooks": [],
+      "has_routing": true,
+      "has_services": false,
+      "has_permissions": false,
+      "libraries": [
+        "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.libraries.yml"
+      ]
+    },
+    {
+      "name": "mobile_verify",
+      "label": "Mobile Number Verification",
+      "path": "modules/custom/mobile_verify",
+      "description": "Verifiy mobile number on user registration using a system-generated OTP.",
+      "package": "Custom",
+      "core_version_requirement": "^8 || ^9 || ^10",
+      "dependencies": [],
+      "files": [
+        "modules/custom/mobile_verify/assets/mobile_verify.css",
+        "modules/custom/mobile_verify/assets/mobile_verify.js",
+        "modules/custom/mobile_verify/assets/mobile_verify.scss",
+        "modules/custom/mobile_verify/mobile_verify.info.yml",
+        "modules/custom/mobile_verify/mobile_verify.libraries.yml",
+        "modules/custom/mobile_verify/mobile_verify.module",
+        "modules/custom/mobile_verify/mobile_verify.routing.yml",
+        "modules/custom/mobile_verify/src/Controller/MobileVerifyController.php"
+      ],
+      "entry_points": [
+        "modules/custom/mobile_verify/mobile_verify.module",
+        "modules/custom/mobile_verify/mobile_verify.routing.yml",
+        "modules/custom/mobile_verify/mobile_verify.libraries.yml"
+      ],
+      "hooks": [
+        {
+          "name": "mobile_verify_form_alter",
+          "file": "modules/custom/mobile_verify/mobile_verify.module",
+          "line": 8
+        }
+      ],
+      "has_routing": true,
+      "has_services": false,
+      "has_permissions": false,
+      "libraries": [
+        "modules/custom/mobile_verify/mobile_verify.libraries.yml"
+      ]
+    },
+    {
+      "name": "multiple_dates",
+      "label": "Multiple Dates",
+      "path": "modules/custom/multiple_dates",
+      "description": "Multiple Dates form element using the jQuery UI datetimepicker.",
+      "package": "Multiple Dates",
+      "core_version_requirement": "^8 || ^9 || ^10",
+      "dependencies": [
+        "field",
+        "jquery_ui_datepicker"
+      ],
+      "files": [
+        "modules/custom/multiple_dates/css/multiple-dates.css",
+        "modules/custom/multiple_dates/js/jquery-ui.multidatespicker.js",
+        "modules/custom/multiple_dates/js/multiple-dates.js",
+        "modules/custom/multiple_dates/multiple_dates.info.yml",
+        "modules/custom/multiple_dates/multiple_dates.libraries.yml",
+        "modules/custom/multiple_dates/multiple_dates.module",
+        "modules/custom/multiple_dates/src/Plugin/Field/FieldFormatter/MultipleDatesDefaultFormatter.php",
+        "modules/custom/multiple_dates/src/Plugin/Field/FieldType/MultipleDatesFieldItem.php",
+        "modules/custom/multiple_dates/src/Plugin/Field/FieldWidget/MultipleDatesDefaultWidget.php",
+        "modules/custom/multiple_dates/templates/multiple-dates.html.twig"
+      ],
+      "entry_points": [
+        "modules/custom/multiple_dates/multiple_dates.module",
+        "modules/custom/multiple_dates/multiple_dates.libraries.yml"
+      ],
+      "hooks": [
+        {
+          "name": "multiple_dates_help",
+          "file": "modules/custom/multiple_dates/multiple_dates.module",
+          "line": 14
+        },
+        {
+          "name": "multiple_dates_theme",
+          "file": "modules/custom/multiple_dates/multiple_dates.module",
+          "line": 37
+        },
+        {
+          "name": "get_formatted_date",
+          "file": "modules/custom/multiple_dates/multiple_dates.module",
+          "line": 54
+        }
+      ],
+      "has_routing": false,
+      "has_services": false,
+      "has_permissions": false,
+      "libraries": [
+        "modules/custom/multiple_dates/multiple_dates.libraries.yml"
+      ]
+    },
+    {
+      "name": "package_booking",
+      "label": "Package Booking",
+      "path": "modules/custom/package_booking",
+      "description": "Custom module to check unavailability of packages based on selected dates.",
+      "package": "Custom",
+      "core_version_requirement": "^10",
+      "dependencies": [],
+      "files": [
+        "modules/custom/package_booking/js/package_booking.js",
+        "modules/custom/package_booking/package_booking.info.yml",
+        "modules/custom/package_booking/package_booking.libraries.yml",
+        "modules/custom/package_booking/package_booking.module"
+      ],
+      "entry_points": [
+        "modules/custom/package_booking/package_booking.module",
+        "modules/custom/package_booking/package_booking.libraries.yml"
+      ],
+      "hooks": [
+        {
+          "name": "package_booking_form_commerce_order_item_add_to_cart_form_alter",
+          "file": "modules/custom/package_booking/package_booking.module",
+          "line": 26
+        },
+        {
+          "name": "package_booking_availability_check",
+          "file": "modules/custom/package_booking/package_booking.module",
+          "line": 63
+        },
+        {
+          "name": "package_booking_availability_check_submit",
+          "file": "modules/custom/package_booking/package_booking.module",
+          "line": 117
+        }
+      ],
+      "has_routing": false,
+      "has_services": false,
+      "has_permissions": false,
+      "libraries": [
+        "modules/custom/package_booking/package_booking.libraries.yml"
+      ]
+    },
+    {
+      "name": "room_booking",
+      "label": "Room Booking",
+      "path": "modules/custom/room_booking",
+      "description": "Custom module to simplify the room booking.",
+      "package": "Custom",
+      "core_version_requirement": "^10",
+      "dependencies": [],
+      "files": [
+        "modules/custom/room_booking/js/room_booking.js",
+        "modules/custom/room_booking/room_booking.info.yml",
+        "modules/custom/room_booking/room_booking.libraries.yml",
+        "modules/custom/room_booking/room_booking.module"
+      ],
+      "entry_points": [
+        "modules/custom/room_booking/room_booking.module",
+        "modules/custom/room_booking/room_booking.libraries.yml"
+      ],
+      "hooks": [
+        {
+          "name": "room_booking_form_commerce_order_item_pado_add_to_cart_form_alter",
+          "file": "modules/custom/room_booking/room_booking.module",
+          "line": 25
+        },
+        {
+          "name": "room_booking_availability_check",
+          "file": "modules/custom/room_booking/room_booking.module",
+          "line": 61
+        },
+        {
+          "name": "getDatesBetweenRoom",
+          "file": "modules/custom/room_booking/room_booking.module",
+          "line": 197
+        },
+        {
+          "name": "room_booking_commerce_order_item_presave",
+          "file": "modules/custom/room_booking/room_booking.module",
+          "line": 216
+        },
+        {
+          "name": "room_booking_availability_check_submit",
+          "file": "modules/custom/room_booking/room_booking.module",
+          "line": 235
+        }
+      ],
+      "has_routing": false,
+      "has_services": false,
+      "has_permissions": false,
+      "libraries": [
+        "modules/custom/room_booking/room_booking.libraries.yml"
+      ]
+    },
+    {
+      "name": "simple_login",
+      "label": "Simple Login",
+      "path": "modules/custom/simple_login",
+      "description": "Allows users to log in using a system-generated OTP code instead of a password.",
+      "package": "Custom",
+      "core_version_requirement": "^8 || ^9 || ^10",
+      "dependencies": [],
+      "files": [
+        "modules/custom/simple_login/js/simple_login.js",
+        "modules/custom/simple_login/js/simple_login_test.js",
+        "modules/custom/simple_login/simple_login.info.yml",
+        "modules/custom/simple_login/simple_login.libraries.yml",
+        "modules/custom/simple_login/simple_login.module",
+        "modules/custom/simple_login/simple_login.routing.yml",
+        "modules/custom/simple_login/src/Controller/SimpleLoginController.php"
+      ],
+      "entry_points": [
+        "modules/custom/simple_login/simple_login.module",
+        "modules/custom/simple_login/simple_login.routing.yml",
+        "modules/custom/simple_login/simple_login.libraries.yml"
+      ],
+      "hooks": [
+        {
+          "name": "simple_login_form_alter",
+          "file": "modules/custom/simple_login/simple_login.module",
+          "line": 8
+        },
+        {
+          "name": "simple_login_user_logout",
+          "file": "modules/custom/simple_login/simple_login.module",
+          "line": 22
+        }
+      ],
+      "has_routing": true,
+      "has_services": false,
+      "has_permissions": false,
+      "libraries": [
+        "modules/custom/simple_login/simple_login.libraries.yml"
+      ]
+    },
+    {
+      "name": "weekend_trip_booking",
+      "label": "Weekend Trip Booking",
+      "path": "modules/custom/weekend_trip_booking",
+      "description": "Custom module to simplify the weekend trip booking.",
+      "package": "Custom",
+      "core_version_requirement": "^10",
+      "dependencies": [],
+      "files": [
+        "modules/custom/weekend_trip_booking/weekend_trip_booking.info.yml",
+        "modules/custom/weekend_trip_booking/weekend_trip_booking.libraries.yml",
+        "modules/custom/weekend_trip_booking/weekend_trip_booking.module"
+      ],
+      "entry_points": [
+        "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+        "modules/custom/weekend_trip_booking/weekend_trip_booking.libraries.yml"
+      ],
+      "hooks": [
+        {
+          "name": "weekend_trip_booking_form_commerce_order_item_add_to_cart_form_alter",
+          "file": "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+          "line": 25
+        },
+        {
+          "name": "weekend_trip_booking_availability_check",
+          "file": "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+          "line": 61
+        },
+        {
+          "name": "weekend_trip_booking_availability_check_submit",
+          "file": "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+          "line": 166
+        }
+      ],
+      "has_routing": false,
+      "has_services": false,
+      "has_permissions": false,
+      "libraries": [
+        "modules/custom/weekend_trip_booking/weekend_trip_booking.libraries.yml"
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "name": "tripzee",
+      "label": "Tripzee",
+      "path": "themes/custom/tripzee",
+      "description": "A clean, accessible, and flexible customised front end theme developed for GoTripzee",
+      "base_theme": "bootstrap5",
+      "libraries": "themes/custom/tripzee/tripzee.libraries.yml",
+      "theme_file": "themes/custom/tripzee/tripzee.theme",
+      "template_count": 54,
+      "css_scss_count": 14,
+      "js_count": 1,
+      "image_count": 32
+    }
+  ],
+  "routes": [
+    {
+      "name": "drupal_commerce_razorpay.capturePayment",
+      "file": "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml",
+      "line": 1,
+      "path": "/capturePayment",
+      "controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\RzpController::capturePayment",
+      "methods": [],
+      "requirements": {
+        "_access": "TRUE"
+      },
+      "defaults": {
+        "_controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\RzpController::capturePayment"
+      },
+      "module": "drupal_commerce_razorpay",
+      "http_method": "ANY",
+      "requirement_label": "_access: TRUE",
+      "permission": null,
+      "authentication": "No permission requirement declared"
+    },
+    {
+      "name": "drupal_commerce_razorpay.ipn_handler",
+      "file": "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml",
+      "line": 9,
+      "path": "/payment/ipn-handler",
+      "controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\IPNController::handleIPN",
+      "methods": [
+        "POST"
+      ],
+      "requirements": {
+        "_csrf_token": "TRUE"
+      },
+      "defaults": {
+        "_controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\IPNController::handleIPN",
+        "_title": "IPN Handler"
+      },
+      "module": "drupal_commerce_razorpay",
+      "http_method": "POST",
+      "requirement_label": "_csrf_token: TRUE",
+      "permission": null,
+      "authentication": "CSRF token requirement"
+    },
+    {
+      "name": "mobile_verify.generate_otp",
+      "file": "modules/custom/mobile_verify/mobile_verify.routing.yml",
+      "line": 1,
+      "path": "/generate-otp",
+      "controller": "\\Drupal\\mobile_verify\\Controller\\MobileVerifyController::processLogin",
+      "methods": [
+        "POST"
+      ],
+      "requirements": {
+        "_access": "TRUE"
+      },
+      "defaults": {
+        "_controller": "\\Drupal\\mobile_verify\\Controller\\MobileVerifyController::processLogin",
+        "_title": "Request OTP"
+      },
+      "module": "mobile_verify",
+      "http_method": "POST",
+      "requirement_label": "_access: TRUE",
+      "permission": null,
+      "authentication": "No permission requirement declared"
+    },
+    {
+      "name": "simple_login.generate_otp",
+      "file": "modules/custom/simple_login/simple_login.routing.yml",
+      "line": 1,
+      "path": "/generate-otp",
+      "controller": "\\Drupal\\simple_login\\Controller\\SimpleLoginController::processLogin",
+      "methods": [
+        "POST"
+      ],
+      "requirements": {
+        "_access": "TRUE"
+      },
+      "defaults": {
+        "_controller": "\\Drupal\\simple_login\\Controller\\SimpleLoginController::processLogin",
+        "_title": "Request OTP"
+      },
+      "module": "simple_login",
+      "http_method": "POST",
+      "requirement_label": "_access: TRUE",
+      "permission": null,
+      "authentication": "No permission requirement declared"
+    }
+  ],
+  "controllers": [
+    {
+      "kind": "class",
+      "class": "Drupal\\drupal_commerce_razorpay\\Controller\\IPNController",
+      "short_name": "IPNController",
+      "file": "modules/custom/drupal_commerce_razorpay/src/Controller/IPNController.php",
+      "line": 11,
+      "extends": "ControllerBase",
+      "implements": [],
+      "methods": [
+        {
+          "name": "handleIPN",
+          "visibility": "public",
+          "line": 16
+        }
+      ],
+      "route": "drupal_commerce_razorpay.ipn_handler",
+      "path": "/payment/ipn-handler",
+      "request_type": "POST",
+      "authentication": "CSRF token requirement",
+      "response_type": "No explicit response returned",
+      "services_injected": "No constructor/container injection detected",
+      "services_used": [
+        "plugin.manager.commerce_payment_gateway"
+      ],
+      "business_logic_summary": "Reads plugin_id from POST data, creates Commerce payment gateway plugin instance, calls onNotify($request), throws on failed verification."
+    },
+    {
+      "kind": "class",
+      "class": "Drupal\\drupal_commerce_razorpay\\Controller\\RzpController",
+      "short_name": "RzpController",
+      "file": "modules/custom/drupal_commerce_razorpay/src/Controller/RzpController.php",
+      "line": 17,
+      "extends": "ControllerBase",
+      "implements": [],
+      "methods": [
+        {
+          "name": "capturePayment",
+          "visibility": "public",
+          "line": 19
+        }
+      ],
+      "route": "drupal_commerce_razorpay.capturePayment",
+      "path": "/capturePayment",
+      "request_type": "ANY",
+      "authentication": "No permission requirement declared",
+      "response_type": "RedirectResponse",
+      "services_injected": "No constructor/container injection detected",
+      "services_used": [],
+      "business_logic_summary": "Redirects to Commerce payment checkout return route with commerce_order parameter hardcoded to 1."
+    },
+    {
+      "kind": "class",
+      "class": "Drupal\\mobile_verify\\Controller\\MobileVerifyController",
+      "short_name": "MobileVerifyController",
+      "file": "modules/custom/mobile_verify/src/Controller/MobileVerifyController.php",
+      "line": 13,
+      "extends": "ControllerBase",
+      "implements": [],
+      "methods": [
+        {
+          "name": "processLogin",
+          "visibility": "public",
+          "line": 18
+        }
+      ],
+      "route": "mobile_verify.generate_otp",
+      "path": "/generate-otp",
+      "request_type": "POST",
+      "authentication": "No permission requirement declared",
+      "response_type": "JsonResponse",
+      "services_injected": "No constructor/container injection detected",
+      "services_used": [],
+      "business_logic_summary": "Generates mobile verification OTP via Textlocal SMS and returns JSON."
+    },
+    {
+      "kind": "class",
+      "class": "Drupal\\simple_login\\Controller\\SimpleLoginController",
+      "short_name": "SimpleLoginController",
+      "file": "modules/custom/simple_login/src/Controller/SimpleLoginController.php",
+      "line": 13,
+      "extends": "ControllerBase",
+      "implements": [],
+      "methods": [
+        {
+          "name": "processLogin",
+          "visibility": "public",
+          "line": 18
+        }
+      ],
+      "route": "simple_login.generate_otp",
+      "path": "/generate-otp",
+      "request_type": "POST",
+      "authentication": "No permission requirement declared",
+      "response_type": "JsonResponse",
+      "services_injected": "No constructor/container injection detected",
+      "services_used": [],
+      "business_logic_summary": "Generates OTP, resets/creates user password, sends Textlocal SMS, returns JSON."
+    }
+  ],
+  "entities": [
+    {
+      "entity_type": "block_content",
+      "bundle": "basic",
+      "name": "Basic block",
+      "file": "config/sync/block_content.type.basic.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Body",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.basic.body.yml",
+          "storage_file": "config/sync/field.storage.block_content.body.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "block_content",
+      "bundle": "basic_block_with_image",
+      "name": "Basic Block with Image",
+      "file": "config/sync/block_content.type.basic_block_with_image.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.basic_block_with_image.field_image.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_image.yml"
+        },
+        {
+          "field_name": "field_secondary_text",
+          "label": "Secondary Text",
+          "type": "string_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.basic_block_with_image.field_secondary_text.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_secondary_text.yml"
+        },
+        {
+          "field_name": "field_title",
+          "label": "Title",
+          "type": "string_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.basic_block_with_image.field_title.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_title.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "block_content",
+      "bundle": "cta_block",
+      "name": "CTA Block",
+      "file": "config/sync/block_content.type.cta_block.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_button",
+          "label": "Button",
+          "type": "link",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.cta_block.field_button.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_button.yml"
+        },
+        {
+          "field_name": "field_media",
+          "label": "Image/Video",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.cta_block.field_media.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_media.yml"
+        },
+        {
+          "field_name": "field_secondary_text",
+          "label": "Secondary Text",
+          "type": "string_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.cta_block.field_secondary_text.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_secondary_text.yml"
+        },
+        {
+          "field_name": "field_title",
+          "label": "Title",
+          "type": "string_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.cta_block.field_title.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_title.yml"
+        }
+      ],
+      "relationships": [
+        "field_media"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "block_content",
+      "bundle": "image_block",
+      "name": "Image Block",
+      "file": "config/sync/block_content.type.image_block.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_featured_on",
+          "label": "Featured On",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.image_block.field_featured_on.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_featured_on.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.image_block.field_image.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_image.yml"
+        },
+        {
+          "field_name": "field_link",
+          "label": "Link",
+          "type": "link",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.image_block.field_link.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_link.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "block_content",
+      "bundle": "promo_block",
+      "name": "Promo Block",
+      "file": "config/sync/block_content.type.promo_block.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_button",
+          "label": "Link",
+          "type": "link",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.block_content.promo_block.field_button.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_button.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.block_content.promo_block.field_image.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_image.yml"
+        },
+        {
+          "field_name": "field_mobile_image",
+          "label": "Mobile Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.block_content.promo_block.field_mobile_image.yml",
+          "storage_file": "config/sync/field.storage.block_content.field_mobile_image.yml"
+        }
+      ],
+      "relationships": [
+        "field_image",
+        "field_mobile_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "commerce_order_item",
+      "bundle": "cab",
+      "name": "Cab",
+      "file": "config/sync/commerce_order.commerce_order_item_type.cab.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_date",
+          "label": "Date",
+          "type": "daterange",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_order_item.cab.field_date.yml",
+          "storage_file": "config/sync/field.storage.commerce_order_item.field_date.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce order item type used by booking flows."
+    },
+    {
+      "entity_type": "commerce_order_item",
+      "bundle": "default",
+      "name": "Default",
+      "file": "config/sync/commerce_order.commerce_order_item_type.default.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_booking_date",
+          "label": "Date of Arrival",
+          "type": "datetime",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.commerce_order_item.default.field_booking_date.yml",
+          "storage_file": "config/sync/field.storage.commerce_order_item.field_booking_date.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce order item type used by booking flows."
+    },
+    {
+      "entity_type": "commerce_order_item",
+      "bundle": "event",
+      "name": "Event",
+      "file": "config/sync/commerce_order.commerce_order_item_type.event.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce order item type used by booking flows."
+    },
+    {
+      "entity_type": "commerce_order_item",
+      "bundle": "room",
+      "name": "Stay",
+      "file": "config/sync/commerce_order.commerce_order_item_type.room.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_adults",
+          "label": "No. of Adults",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_order_item.room.field_adults.yml",
+          "storage_file": "config/sync/field.storage.commerce_order_item.field_adults.yml"
+        },
+        {
+          "field_name": "field_bed",
+          "label": "Extra Adult",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_order_item.room.field_bed.yml",
+          "storage_file": "config/sync/field.storage.commerce_order_item.field_bed.yml"
+        },
+        {
+          "field_name": "field_children",
+          "label": "No. of Children",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_order_item.room.field_children.yml",
+          "storage_file": "config/sync/field.storage.commerce_order_item.field_children.yml"
+        },
+        {
+          "field_name": "field_date",
+          "label": "Date",
+          "type": "daterange",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_order_item.room.field_date.yml",
+          "storage_file": "config/sync/field.storage.commerce_order_item.field_date.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce order item type used by booking flows."
+    },
+    {
+      "entity_type": "commerce_order_item",
+      "bundle": "weekend_trip",
+      "name": "Weekend Trip",
+      "file": "config/sync/commerce_order.commerce_order_item_type.weekend_trip.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_booking_date",
+          "label": "Booking Date",
+          "type": "datetime",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.commerce_order_item.weekend_trip.field_booking_date.yml",
+          "storage_file": "config/sync/field.storage.commerce_order_item.field_booking_date.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce order item type used by booking flows."
+    },
+    {
+      "entity_type": "commerce_product",
+      "bundle": "cab",
+      "name": "Cab",
+      "file": "config/sync/commerce_product.commerce_product_type.cab.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Body",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.body.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+        },
+        {
+          "field_name": "field_availability",
+          "label": "Availability",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_availability.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_availability.yml"
+        },
+        {
+          "field_name": "field_deposit_percentage",
+          "label": "Deposit Percentage",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_deposit_percentage.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+        },
+        {
+          "field_name": "field_destinations",
+          "label": "Destinations",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_destinations.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_destinations.yml"
+        },
+        {
+          "field_name": "field_disable_booking",
+          "label": "Disable Booking",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_disable_booking.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_image.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_image.yml"
+        },
+        {
+          "field_name": "field_key_points",
+          "label": "Key Points",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_key_points.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_key_points.yml"
+        },
+        {
+          "field_name": "field_meta_tags",
+          "label": "Meta Tags",
+          "type": "metatag",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_meta_tags.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+        },
+        {
+          "field_name": "field_seating_capacity",
+          "label": "Seating Capacity",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_seating_capacity.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_seating_capacity.yml"
+        },
+        {
+          "field_name": "field_sold_out",
+          "label": "Sold Out",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_sold_out.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_sold_out.yml"
+        },
+        {
+          "field_name": "field_unavailable_dates",
+          "label": "Unavailable Dates",
+          "type": "multiple_dates",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_unavailable_dates.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_unavailable_dates.yml"
+        },
+        {
+          "field_name": "field_vehicle_type",
+          "label": "Vehicle Type",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.cab.field_vehicle_type.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_vehicle_type.yml"
+        }
+      ],
+      "relationships": [
+        "field_destinations",
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+    },
+    {
+      "entity_type": "commerce_product",
+      "bundle": "default",
+      "name": "Default",
+      "file": "config/sync/commerce_product.commerce_product_type.default.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Body",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.default.body.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+    },
+    {
+      "entity_type": "commerce_product",
+      "bundle": "package",
+      "name": "Package",
+      "file": "config/sync/commerce_product.commerce_product_type.package.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Overview",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.body.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+        },
+        {
+          "field_name": "field_comparison_text",
+          "label": "Comparison Text",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_comparison_text.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_comparison_text.yml"
+        },
+        {
+          "field_name": "field_deposit_percentage",
+          "label": "Deposit Percentage",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_deposit_percentage.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+        },
+        {
+          "field_name": "field_destination",
+          "label": "Destination",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_destination.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_destination.yml"
+        },
+        {
+          "field_name": "field_disable_booking",
+          "label": "Disable Booking",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_disable_booking.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+        },
+        {
+          "field_name": "field_duration",
+          "label": "Duration",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_duration.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_duration.yml"
+        },
+        {
+          "field_name": "field_featured",
+          "label": "Featured",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_featured.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_featured.yml"
+        },
+        {
+          "field_name": "field_featured_image",
+          "label": "Featured Image",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_featured_image.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_featured_image.yml"
+        },
+        {
+          "field_name": "field_featured_variation",
+          "label": "Featured Variation",
+          "type": "link",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_featured_variation.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_featured_variation.yml"
+        },
+        {
+          "field_name": "field_gallery_label",
+          "label": "Gallery Label",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_gallery_label.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_gallery_label.yml"
+        },
+        {
+          "field_name": "field_location_type",
+          "label": "Location Type",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_location_type.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_location_type.yml"
+        },
+        {
+          "field_name": "field_message_to_customer",
+          "label": "Message to Customer",
+          "type": "string_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_message_to_customer.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_message_to_customer.yml"
+        },
+        {
+          "field_name": "field_meta_tags",
+          "label": "Meta Tags",
+          "type": "metatag",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_meta_tags.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+        },
+        {
+          "field_name": "field_other_infos",
+          "label": "Package Infos",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_other_infos.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_other_infos.yml"
+        },
+        {
+          "field_name": "field_package_type",
+          "label": "Package Type",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_package_type.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_package_type.yml"
+        },
+        {
+          "field_name": "field_pdf",
+          "label": "Attachment",
+          "type": "file",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_pdf.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_pdf.yml"
+        },
+        {
+          "field_name": "field_product_type_comment",
+          "label": "Variation Message",
+          "type": "string_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_product_type_comment.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_product_type_comment.yml"
+        },
+        {
+          "field_name": "field_rating",
+          "label": "Rating",
+          "type": "fivestar",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_rating.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_rating.yml"
+        },
+        {
+          "field_name": "field_region",
+          "label": "Region",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_region.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_region.yml"
+        },
+        {
+          "field_name": "field_sold_out",
+          "label": "Sold Out",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_sold_out.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_sold_out.yml"
+        },
+        {
+          "field_name": "field_special_badge",
+          "label": "Special Badge",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_special_badge.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_special_badge.yml"
+        },
+        {
+          "field_name": "field_unavailable_dates",
+          "label": "Unavailable Dates",
+          "type": "multiple_dates",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.package.field_unavailable_dates.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_unavailable_dates.yml"
+        }
+      ],
+      "relationships": [
+        "field_destination",
+        "field_featured_image",
+        "field_location_type",
+        "field_package_type",
+        "field_pdf",
+        "field_region"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+    },
+    {
+      "entity_type": "commerce_product",
+      "bundle": "room",
+      "name": "Stay",
+      "file": "config/sync/commerce_product.commerce_product_type.room.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Overview",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.body.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+        },
+        {
+          "field_name": "field_addon",
+          "label": "Addon",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_addon.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_addon.yml"
+        },
+        {
+          "field_name": "field_amneties",
+          "label": "Amneties",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_amneties.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_amneties.yml"
+        },
+        {
+          "field_name": "field_availability",
+          "label": "Availability",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_availability.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_availability.yml"
+        },
+        {
+          "field_name": "field_deposit_percentage",
+          "label": "Deposit Percentage",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_deposit_percentage.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+        },
+        {
+          "field_name": "field_destination",
+          "label": "Destination",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_destination.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_destination.yml"
+        },
+        {
+          "field_name": "field_disable_booking",
+          "label": "Disable Booking",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_disable_booking.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+        },
+        {
+          "field_name": "field_featured",
+          "label": "Featured",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_featured.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_featured.yml"
+        },
+        {
+          "field_name": "field_featured_image",
+          "label": "Featured Image",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_featured_image.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_featured_image.yml"
+        },
+        {
+          "field_name": "field_gallery_label",
+          "label": "Gallery Label",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_gallery_label.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_gallery_label.yml"
+        },
+        {
+          "field_name": "field_key_points",
+          "label": "Key Points",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_key_points.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_key_points.yml"
+        },
+        {
+          "field_name": "field_location",
+          "label": "Location",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_location.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_location.yml"
+        },
+        {
+          "field_name": "field_map_embed",
+          "label": "Map Embed",
+          "type": "string_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_map_embed.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_map_embed.yml"
+        },
+        {
+          "field_name": "field_media",
+          "label": "Media",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_media.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_media.yml"
+        },
+        {
+          "field_name": "field_meta_tags",
+          "label": "Meta Tags",
+          "type": "metatag",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_meta_tags.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+        },
+        {
+          "field_name": "field_product_type_comment",
+          "label": "Variation Message",
+          "type": "string_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_product_type_comment.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_product_type_comment.yml"
+        },
+        {
+          "field_name": "field_related_room",
+          "label": "Related Room",
+          "type": "entity_reference",
+          "cardinality": "4",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_related_room.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_related_room.yml"
+        },
+        {
+          "field_name": "field_related_variation",
+          "label": "Related Variation",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_related_variation.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_related_variation.yml"
+        },
+        {
+          "field_name": "field_room_type",
+          "label": "Type",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_room_type.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_room_type.yml"
+        },
+        {
+          "field_name": "field_sold_out",
+          "label": "Sold Out",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_sold_out.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_sold_out.yml"
+        },
+        {
+          "field_name": "field_unavailable_dates",
+          "label": "Unavailable Dates",
+          "type": "multiple_dates",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.room.field_unavailable_dates.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_unavailable_dates.yml"
+        }
+      ],
+      "relationships": [
+        "field_addon",
+        "field_destination",
+        "field_featured_image",
+        "field_media",
+        "field_related_room",
+        "field_related_variation",
+        "field_room_type"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+    },
+    {
+      "entity_type": "commerce_product",
+      "bundle": "trip",
+      "name": "Event",
+      "file": "config/sync/commerce_product.commerce_product_type.trip.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Overview",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.body.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+        },
+        {
+          "field_name": "field_blocks",
+          "label": "Blocks",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_blocks.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_blocks.yml"
+        },
+        {
+          "field_name": "field_date",
+          "label": "Start Date",
+          "type": "datetime",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_date.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_date.yml"
+        },
+        {
+          "field_name": "field_deposit_percentage",
+          "label": "Deposit Percentage",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_deposit_percentage.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+        },
+        {
+          "field_name": "field_destination",
+          "label": "Destination",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_destination.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_destination.yml"
+        },
+        {
+          "field_name": "field_disable_booking",
+          "label": "Disable Booking",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_disable_booking.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+        },
+        {
+          "field_name": "field_duration",
+          "label": "Duration",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_duration.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_duration.yml"
+        },
+        {
+          "field_name": "field_end_date",
+          "label": "End Date",
+          "type": "datetime",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_end_date.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_end_date.yml"
+        },
+        {
+          "field_name": "field_exclusion",
+          "label": "Exclusions",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_exclusion.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_exclusion.yml"
+        },
+        {
+          "field_name": "field_featured_image",
+          "label": "Featured Image",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_featured_image.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_featured_image.yml"
+        },
+        {
+          "field_name": "field_gallery_label",
+          "label": "Gallery Label",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_gallery_label.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_gallery_label.yml"
+        },
+        {
+          "field_name": "field_inclusion",
+          "label": "Inclusions",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_inclusion.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_inclusion.yml"
+        },
+        {
+          "field_name": "field_itenary",
+          "label": "Tour Plan",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_itenary.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_itenary.yml"
+        },
+        {
+          "field_name": "field_key_points",
+          "label": "Key Points",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_key_points.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_key_points.yml"
+        },
+        {
+          "field_name": "field_location_type",
+          "label": "Location Type",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_location_type.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_location_type.yml"
+        },
+        {
+          "field_name": "field_media",
+          "label": "Media",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_media.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_media.yml"
+        },
+        {
+          "field_name": "field_meta_tags",
+          "label": "Meta Tags",
+          "type": "metatag",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_meta_tags.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+        },
+        {
+          "field_name": "field_other_infos",
+          "label": "Event Infos",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_other_infos.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_other_infos.yml"
+        },
+        {
+          "field_name": "field_sold_out",
+          "label": "Sold Out",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_sold_out.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_sold_out.yml"
+        },
+        {
+          "field_name": "field_stock",
+          "label": "Availability",
+          "type": "commerce_stock_level",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.trip.field_stock.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_stock.yml"
+        }
+      ],
+      "relationships": [
+        "field_destination",
+        "field_featured_image",
+        "field_location_type",
+        "field_media"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+    },
+    {
+      "entity_type": "commerce_product",
+      "bundle": "weekend_trip",
+      "name": "Weekend Trip",
+      "file": "config/sync/commerce_product.commerce_product_type.weekend_trip.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Overview",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.body.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+        },
+        {
+          "field_name": "field_availability",
+          "label": "Availability",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_availability.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_availability.yml"
+        },
+        {
+          "field_name": "field_available_dates",
+          "label": "Available Dates",
+          "type": "multiple_dates",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_available_dates.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_available_dates.yml"
+        },
+        {
+          "field_name": "field_deposit_percentage",
+          "label": "Deposit Percentage",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_deposit_percentage.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+        },
+        {
+          "field_name": "field_destination",
+          "label": "Destination",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_destination.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_destination.yml"
+        },
+        {
+          "field_name": "field_disable_booking",
+          "label": "Disable Booking",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_disable_booking.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+        },
+        {
+          "field_name": "field_duration",
+          "label": "Duration",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_duration.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_duration.yml"
+        },
+        {
+          "field_name": "field_featured_image",
+          "label": "Featured Image",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_featured_image.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_featured_image.yml"
+        },
+        {
+          "field_name": "field_gallery_label",
+          "label": "Gallery Label",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_gallery_label.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_gallery_label.yml"
+        },
+        {
+          "field_name": "field_group_size",
+          "label": "Group of",
+          "type": "string",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_group_size.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_group_size.yml"
+        },
+        {
+          "field_name": "field_itenary",
+          "label": "Tour Plan",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_itenary.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_itenary.yml"
+        },
+        {
+          "field_name": "field_key_points",
+          "label": "Key Points",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_key_points.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_key_points.yml"
+        },
+        {
+          "field_name": "field_media",
+          "label": "Media",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_media.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_media.yml"
+        },
+        {
+          "field_name": "field_meta_tags",
+          "label": "Meta Tags",
+          "type": "metatag",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_meta_tags.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+        },
+        {
+          "field_name": "field_organiser",
+          "label": "Organiser",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_organiser.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_organiser.yml"
+        },
+        {
+          "field_name": "field_other_infos",
+          "label": "Trip Infos",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_other_infos.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_other_infos.yml"
+        },
+        {
+          "field_name": "field_pdf",
+          "label": "Attachment",
+          "type": "file",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_pdf.yml",
+          "storage_file": "config/sync/field.storage.commerce_product.field_pdf.yml"
+        }
+      ],
+      "relationships": [
+        "field_destination",
+        "field_featured_image",
+        "field_media",
+        "field_organiser",
+        "field_pdf"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+    },
+    {
+      "entity_type": "commerce_product_variation",
+      "bundle": "cab",
+      "name": "Cab",
+      "file": "config/sync/commerce_product.commerce_product_variation_type.cab.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "attribute_pickup_drop",
+          "label": "Pickup & Drop",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.commerce_product_variation.cab.attribute_pickup_drop.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.attribute_pickup_drop.yml"
+        }
+      ],
+      "relationships": [
+        "attribute_pickup_drop"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "commerce_product_variation",
+      "bundle": "default",
+      "name": "Default",
+      "file": "config/sync/commerce_product.commerce_product_variation_type.default.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "commerce_product_variation",
+      "bundle": "package",
+      "name": "Package",
+      "file": "config/sync/commerce_product.commerce_product_variation_type.package.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "attribute_package_type",
+          "label": "Package Type",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.attribute_package_type.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.attribute_package_type.yml"
+        },
+        {
+          "field_name": "field_disable_booking",
+          "label": "Disable Booking",
+          "type": "boolean",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.field_disable_booking.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.field_disable_booking.yml"
+        },
+        {
+          "field_name": "field_exclusion",
+          "label": "Exclusions",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.field_exclusion.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.field_exclusion.yml"
+        },
+        {
+          "field_name": "field_inclusion",
+          "label": "Inclusions",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.field_inclusion.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.field_inclusion.yml"
+        },
+        {
+          "field_name": "field_itenary",
+          "label": "Tour Plan",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.field_itenary.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.field_itenary.yml"
+        },
+        {
+          "field_name": "field_key_points",
+          "label": "Key Points",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.field_key_points.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.field_key_points.yml"
+        },
+        {
+          "field_name": "field_media",
+          "label": "Media",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.field_media.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.field_media.yml"
+        },
+        {
+          "field_name": "field_unavailable_dates",
+          "label": "Unavailable Dates",
+          "type": "multiple_dates",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.field_unavailable_dates.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.field_unavailable_dates.yml"
+        },
+        {
+          "field_name": "field_video_gallery",
+          "label": "Video Gallery",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.field_video_gallery.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.field_video_gallery.yml"
+        },
+        {
+          "field_name": "maximum_order_quantity",
+          "label": "Maximum quantity per order",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.maximum_order_quantity.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.maximum_order_quantity.yml"
+        },
+        {
+          "field_name": "minimum_order_quantity",
+          "label": "Minimum quantity per order",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.commerce_product_variation.package.minimum_order_quantity.yml",
+          "storage_file": "config/sync/field.storage.commerce_product_variation.minimum_order_quantity.yml"
+        }
+      ],
+      "relationships": [
+        "attribute_package_type",
+        "field_media",
+        "field_video_gallery"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "commerce_product_variation",
+      "bundle": "room",
+      "name": "Stay",
+      "file": "config/sync/commerce_product.commerce_product_variation_type.room.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "commerce_product_variation",
+      "bundle": "trip",
+      "name": "Event",
+      "file": "config/sync/commerce_product.commerce_product_variation_type.trip.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "commerce_product_variation",
+      "bundle": "weekend_trip",
+      "name": "Weekend Trip",
+      "file": "config/sync/commerce_product.commerce_product_variation_type.weekend_trip.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "media",
+      "bundle": "audio",
+      "name": "Audio",
+      "file": "config/sync/media.type.audio.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_media_audio_file",
+          "label": "Audio file",
+          "type": "file",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.media.audio.field_media_audio_file.yml",
+          "storage_file": "config/sync/field.storage.media.field_media_audio_file.yml"
+        }
+      ],
+      "relationships": [
+        "field_media_audio_file"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "media",
+      "bundle": "document",
+      "name": "Document",
+      "file": "config/sync/media.type.document.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_media_document",
+          "label": "Document",
+          "type": "file",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.media.document.field_media_document.yml",
+          "storage_file": "config/sync/field.storage.media.field_media_document.yml"
+        }
+      ],
+      "relationships": [
+        "field_media_document"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "media",
+      "bundle": "image",
+      "name": "Image",
+      "file": "config/sync/media.type.image.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_media_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.media.image.field_media_image.yml",
+          "storage_file": "config/sync/field.storage.media.field_media_image.yml"
+        }
+      ],
+      "relationships": [
+        "field_media_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "media",
+      "bundle": "remote_video",
+      "name": "Remote video",
+      "file": "config/sync/media.type.remote_video.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_media_oembed_video",
+          "label": "Video URL",
+          "type": "string",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.media.remote_video.field_media_oembed_video.yml",
+          "storage_file": "config/sync/field.storage.media.field_media_oembed_video.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "media",
+      "bundle": "video",
+      "name": "Video",
+      "file": "config/sync/media.type.video.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_media_video_file",
+          "label": "Video file",
+          "type": "file",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.media.video.field_media_video_file.yml",
+          "storage_file": "config/sync/field.storage.media.field_media_video_file.yml"
+        }
+      ],
+      "relationships": [
+        "field_media_video_file"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "node",
+      "bundle": "article",
+      "name": "Blog",
+      "file": "config/sync/node.type.article.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Body",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.article.body.yml",
+          "storage_file": "config/sync/field.storage.node.body.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.article.field_image.yml",
+          "storage_file": "config/sync/field.storage.node.field_image.yml"
+        },
+        {
+          "field_name": "field_metatags",
+          "label": "Metatags",
+          "type": "metatag",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.article.field_metatags.yml",
+          "storage_file": "config/sync/field.storage.node.field_metatags.yml"
+        },
+        {
+          "field_name": "field_tags",
+          "label": "Tags",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.article.field_tags.yml",
+          "storage_file": "config/sync/field.storage.node.field_tags.yml"
+        }
+      ],
+      "relationships": [
+        "field_image",
+        "field_tags"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Editorial/content bundle."
+    },
+    {
+      "entity_type": "node",
+      "bundle": "destination",
+      "name": "Destination",
+      "file": "config/sync/node.type.destination.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Overview",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.destination.body.yml",
+          "storage_file": "config/sync/field.storage.node.body.yml"
+        },
+        {
+          "field_name": "field_attractions",
+          "label": "Places of Interest",
+          "type": "entity_reference_revisions",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.destination.field_attractions.yml",
+          "storage_file": "config/sync/field.storage.node.field_attractions.yml"
+        },
+        {
+          "field_name": "field_featured",
+          "label": "Featured",
+          "type": "list_string",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.destination.field_featured.yml",
+          "storage_file": "config/sync/field.storage.node.field_featured.yml"
+        },
+        {
+          "field_name": "field_icon",
+          "label": "Icon",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.destination.field_icon.yml",
+          "storage_file": "config/sync/field.storage.node.field_icon.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.destination.field_image.yml",
+          "storage_file": "config/sync/field.storage.node.field_image.yml"
+        },
+        {
+          "field_name": "field_metatags",
+          "label": "Metatags",
+          "type": "metatag",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.destination.field_metatags.yml",
+          "storage_file": "config/sync/field.storage.node.field_metatags.yml"
+        },
+        {
+          "field_name": "field_region",
+          "label": "Region",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.destination.field_region.yml",
+          "storage_file": "config/sync/field.storage.node.field_region.yml"
+        }
+      ],
+      "relationships": [
+        "field_icon",
+        "field_image",
+        "field_region"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Editorial/content bundle."
+    },
+    {
+      "entity_type": "node",
+      "bundle": "flexslider_example",
+      "name": "FlexSlider Example",
+      "file": "config/sync/node.type.flexslider_example.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_flexslider_example_image",
+          "label": "FlexSlider Example Image",
+          "type": "image",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.flexslider_example.field_flexslider_example_image.yml",
+          "storage_file": "config/sync/field.storage.node.field_flexslider_example_image.yml"
+        },
+        {
+          "field_name": "field_flexslider_example_slidesh",
+          "label": "FlexSlider Example Slideshow",
+          "type": "image",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.flexslider_example.field_flexslider_example_slidesh.yml",
+          "storage_file": "config/sync/field.storage.node.field_flexslider_example_slidesh.yml"
+        }
+      ],
+      "relationships": [
+        "field_flexslider_example_image",
+        "field_flexslider_example_slidesh"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Editorial/content bundle."
+    },
+    {
+      "entity_type": "node",
+      "bundle": "page",
+      "name": "Page",
+      "file": "config/sync/node.type.page.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Body",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.page.body.yml",
+          "storage_file": "config/sync/field.storage.node.body.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.page.field_image.yml",
+          "storage_file": "config/sync/field.storage.node.field_image.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Editorial/content bundle."
+    },
+    {
+      "entity_type": "node",
+      "bundle": "team",
+      "name": "Team",
+      "file": "config/sync/node.type.team.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Bio",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.team.body.yml",
+          "storage_file": "config/sync/field.storage.node.body.yml"
+        },
+        {
+          "field_name": "field_designation",
+          "label": "Designation",
+          "type": "string",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.node.team.field_designation.yml",
+          "storage_file": "config/sync/field.storage.node.field_designation.yml"
+        },
+        {
+          "field_name": "field_email",
+          "label": "Email",
+          "type": "email",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.team.field_email.yml",
+          "storage_file": "config/sync/field.storage.node.field_email.yml"
+        },
+        {
+          "field_name": "field_facebook",
+          "label": "Facebook",
+          "type": "link",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.team.field_facebook.yml",
+          "storage_file": "config/sync/field.storage.node.field_facebook.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.team.field_image.yml",
+          "storage_file": "config/sync/field.storage.node.field_image.yml"
+        },
+        {
+          "field_name": "field_instagram",
+          "label": "Instagram",
+          "type": "link",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.team.field_instagram.yml",
+          "storage_file": "config/sync/field.storage.node.field_instagram.yml"
+        },
+        {
+          "field_name": "field_linkedin",
+          "label": "LinkedIn",
+          "type": "link",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.team.field_linkedin.yml",
+          "storage_file": "config/sync/field.storage.node.field_linkedin.yml"
+        },
+        {
+          "field_name": "field_x",
+          "label": "X",
+          "type": "link",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.team.field_x.yml",
+          "storage_file": "config/sync/field.storage.node.field_x.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Editorial/content bundle."
+    },
+    {
+      "entity_type": "node",
+      "bundle": "testimonial",
+      "name": "Testimonial",
+      "file": "config/sync/node.type.testimonial.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "body",
+          "label": "Testimony",
+          "type": "text_with_summary",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.testimonial.body.yml",
+          "storage_file": "config/sync/field.storage.node.body.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "DP",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.testimonial.field_image.yml",
+          "storage_file": "config/sync/field.storage.node.field_image.yml"
+        },
+        {
+          "field_name": "field_location",
+          "label": "Location",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.testimonial.field_location.yml",
+          "storage_file": "config/sync/field.storage.node.field_location.yml"
+        },
+        {
+          "field_name": "field_star_rating",
+          "label": "Star Rating",
+          "type": "fivestar",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.node.testimonial.field_star_rating.yml",
+          "storage_file": "config/sync/field.storage.node.field_star_rating.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Editorial/content bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "accordion",
+      "name": "Accordion",
+      "file": "config/sync/paragraphs.paragraphs_type.accordion.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_text",
+          "label": "Text",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.accordion.field_text.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+        },
+        {
+          "field_name": "field_title",
+          "label": "Title",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.accordion.field_title.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_title.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "cab_points",
+      "name": "Cab Points",
+      "file": "config/sync/paragraphs.paragraphs_type.cab_points.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_cab_key",
+          "label": "Key",
+          "type": "list_string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.cab_points.field_cab_key.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_cab_key.yml"
+        },
+        {
+          "field_name": "field_value",
+          "label": "Value",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.cab_points.field_value.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_value.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "image_and_text",
+      "name": "Image and Text",
+      "file": "config/sync/paragraphs.paragraphs_type.image_and_text.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.image_and_text.field_image.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_image.yml"
+        },
+        {
+          "field_name": "field_text",
+          "label": "Text",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.image_and_text.field_text.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "image_gallery",
+      "name": "Image Gallery",
+      "file": "config/sync/paragraphs.paragraphs_type.image_gallery.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_media_image",
+          "label": "Image",
+          "type": "entity_reference",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.image_gallery.field_media_image.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_media_image.yml"
+        }
+      ],
+      "relationships": [
+        "field_media_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "itenary",
+      "name": "Itenary",
+      "file": "config/sync/paragraphs.paragraphs_type.itenary.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_text",
+          "label": "Text",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.itenary.field_text.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+        },
+        {
+          "field_name": "field_title",
+          "label": "Title",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.itenary.field_title.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_title.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "left_image_with_text",
+      "name": "Left Image with Text",
+      "file": "config/sync/paragraphs.paragraphs_type.left_image_with_text.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.left_image_with_text.field_image.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_image.yml"
+        },
+        {
+          "field_name": "field_text",
+          "label": "Text",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.left_image_with_text.field_text.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "package_points",
+      "name": "Package Points",
+      "file": "config/sync/paragraphs.paragraphs_type.package_points.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_key",
+          "label": "Key",
+          "type": "entity_reference",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.package_points.field_key.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_key.yml"
+        },
+        {
+          "field_name": "field_value",
+          "label": "Value",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.package_points.field_value.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_value.yml"
+        }
+      ],
+      "relationships": [
+        "field_key"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "right_image_with_text",
+      "name": "Right Image with text",
+      "file": "config/sync/paragraphs.paragraphs_type.right_image_with_text.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "-1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.right_image_with_text.field_image.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_image.yml"
+        },
+        {
+          "field_name": "field_text",
+          "label": "Text",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.right_image_with_text.field_text.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "text_only",
+      "name": "Text Only",
+      "file": "config/sync/paragraphs.paragraphs_type.text_only.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_text",
+          "label": "Text",
+          "type": "text_long",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.text_only.field_text.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+        },
+        {
+          "field_name": "field_title",
+          "label": "Title",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.text_only.field_title.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_title.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "paragraph",
+      "bundle": "title_only",
+      "name": "Title Only",
+      "file": "config/sync/paragraphs.paragraphs_type.title_only.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_title",
+          "label": "Title",
+          "type": "string",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.paragraph.title_only.field_title.yml",
+          "storage_file": "config/sync/field.storage.paragraph.field_title.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "profile",
+      "bundle": "customer",
+      "name": "Customer",
+      "file": "config/sync/profile.type.customer.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "address",
+          "label": "Address",
+          "type": "address",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.profile.customer.address.yml",
+          "storage_file": "config/sync/field.storage.profile.address.yml"
+        },
+        {
+          "field_name": "field_alternate_mobile_no",
+          "label": "Alternate Mobile No.",
+          "type": "phone_number",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.profile.customer.field_alternate_mobile_no.yml",
+          "storage_file": "config/sync/field.storage.profile.field_alternate_mobile_no.yml"
+        },
+        {
+          "field_name": "field_mobile_no",
+          "label": "Mobile No.",
+          "type": "phone_number",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.profile.customer.field_mobile_no.yml",
+          "storage_file": "config/sync/field.storage.profile.field_mobile_no.yml"
+        }
+      ],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Drupal configuration entity bundle."
+    },
+    {
+      "entity_type": "taxonomy_term",
+      "bundle": "location_type",
+      "name": "Location Type",
+      "file": "config/sync/taxonomy.vocabulary.location_type.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Classification vocabulary."
+    },
+    {
+      "entity_type": "taxonomy_term",
+      "bundle": "package_key",
+      "name": "Package Key",
+      "file": "config/sync/taxonomy.vocabulary.package_key.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.taxonomy_term.package_key.field_image.yml",
+          "storage_file": "config/sync/field.storage.taxonomy_term.field_image.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Classification vocabulary."
+    },
+    {
+      "entity_type": "taxonomy_term",
+      "bundle": "package_type",
+      "name": "Package Type",
+      "file": "config/sync/taxonomy.vocabulary.package_type.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Classification vocabulary."
+    },
+    {
+      "entity_type": "taxonomy_term",
+      "bundle": "partners",
+      "name": "Partners",
+      "file": "config/sync/taxonomy.vocabulary.partners.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_logo",
+          "label": "Logo",
+          "type": "image",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.taxonomy_term.partners.field_logo.yml",
+          "storage_file": "config/sync/field.storage.taxonomy_term.field_logo.yml"
+        }
+      ],
+      "relationships": [
+        "field_logo"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Classification vocabulary."
+    },
+    {
+      "entity_type": "taxonomy_term",
+      "bundle": "regions",
+      "name": "Regions",
+      "file": "config/sync/taxonomy.vocabulary.regions.yml",
+      "status": "true",
+      "fields": [
+        {
+          "field_name": "field_deposit_percentage",
+          "label": "Deposit Percentage",
+          "type": "integer",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.taxonomy_term.regions.field_deposit_percentage.yml",
+          "storage_file": "config/sync/field.storage.taxonomy_term.field_deposit_percentage.yml"
+        },
+        {
+          "field_name": "field_image",
+          "label": "Image",
+          "type": "image",
+          "cardinality": "1",
+          "required": "true",
+          "config_file": "config/sync/field.field.taxonomy_term.regions.field_image.yml",
+          "storage_file": "config/sync/field.storage.taxonomy_term.field_image.yml"
+        },
+        {
+          "field_name": "field_metatags",
+          "label": "Metatags",
+          "type": "metatag",
+          "cardinality": "1",
+          "required": "false",
+          "config_file": "config/sync/field.field.taxonomy_term.regions.field_metatags.yml",
+          "storage_file": "config/sync/field.storage.taxonomy_term.field_metatags.yml"
+        }
+      ],
+      "relationships": [
+        "field_image"
+      ],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Classification vocabulary."
+    },
+    {
+      "entity_type": "taxonomy_term",
+      "bundle": "room_type",
+      "name": "Room Type",
+      "file": "config/sync/taxonomy.vocabulary.room_type.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Classification vocabulary."
+    },
+    {
+      "entity_type": "taxonomy_term",
+      "bundle": "tags",
+      "name": "Tags",
+      "file": "config/sync/taxonomy.vocabulary.tags.yml",
+      "status": "true",
+      "fields": [],
+      "relationships": [],
+      "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+      "business_purpose": "Classification vocabulary."
+    }
+  ],
+  "api_inventory": [
+    {
+      "endpoint": "/capturePayment",
+      "method": "ANY",
+      "authentication": "No permission requirement declared",
+      "request": "HTTP request parameters/body not formally documented in route.",
+      "response": "RedirectResponse",
+      "module": "drupal_commerce_razorpay",
+      "route": "drupal_commerce_razorpay.capturePayment",
+      "controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\RzpController::capturePayment",
+      "purpose": "Payment/Razorpay endpoint.",
+      "source": "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml"
+    },
+    {
+      "endpoint": "/payment/ipn-handler",
+      "method": "POST",
+      "authentication": "CSRF token requirement",
+      "request": "HTTP POST; body details inferred from controller source where available.",
+      "response": "No explicit response returned",
+      "module": "drupal_commerce_razorpay",
+      "route": "drupal_commerce_razorpay.ipn_handler",
+      "controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\IPNController::handleIPN",
+      "purpose": "Payment/Razorpay endpoint.",
+      "source": "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml"
+    },
+    {
+      "endpoint": "/generate-otp",
+      "method": "POST",
+      "authentication": "No permission requirement declared",
+      "request": "HTTP POST; body details inferred from controller source where available.",
+      "response": "JsonResponse",
+      "module": "mobile_verify",
+      "route": "mobile_verify.generate_otp",
+      "controller": "\\Drupal\\mobile_verify\\Controller\\MobileVerifyController::processLogin",
+      "purpose": "OTP generation endpoint.",
+      "source": "modules/custom/mobile_verify/mobile_verify.routing.yml"
+    },
+    {
+      "endpoint": "/generate-otp",
+      "method": "POST",
+      "authentication": "No permission requirement declared",
+      "request": "HTTP POST; body details inferred from controller source where available.",
+      "response": "JsonResponse",
+      "module": "simple_login",
+      "route": "simple_login.generate_otp",
+      "controller": "\\Drupal\\simple_login\\Controller\\SimpleLoginController::processLogin",
+      "purpose": "OTP generation endpoint.",
+      "source": "modules/custom/simple_login/simple_login.routing.yml"
+    }
+  ],
+  "services": [
+    {
+      "kind": "class",
+      "class": "Drupal\\drupal_commerce_razorpay\\AutoWebhook",
+      "short_name": "AutoWebhook",
+      "file": "modules/custom/drupal_commerce_razorpay/src/AutoWebhook.php",
+      "line": 8,
+      "extends": null,
+      "implements": [],
+      "methods": [
+        {
+          "name": "generateWebhookSecret",
+          "visibility": "protected",
+          "line": 22
+        },
+        {
+          "name": "autoEnableWebhook",
+          "visibility": "public",
+          "line": 29
+        }
+      ],
+      "service_id": null,
+      "registration": "No custom services.yml registration found; listed as utility/class only."
+    },
+    {
+      "kind": "class",
+      "class": "Drupal\\drupal_commerce_razorpay\\PluginForm\\RazorpayForm",
+      "short_name": "RazorpayForm",
+      "file": "modules/custom/drupal_commerce_razorpay/src/PluginForm/RazorpayForm.php",
+      "line": 16,
+      "extends": "BasePaymentOffsiteForm",
+      "implements": [],
+      "methods": [
+        {
+          "name": "createOrGetRazorpayOrderId",
+          "visibility": "public",
+          "line": 33
+        },
+        {
+          "name": "getRazorpayApiInstance",
+          "visibility": "protected",
+          "line": 156
+        },
+        {
+          "name": "setPaymentConfigAndMessenger",
+          "visibility": "protected",
+          "line": 168
+        },
+        {
+          "name": "generateCheckoutForm",
+          "visibility": "public",
+          "line": 178
+        },
+        {
+          "name": "buildConfigurationForm",
+          "visibility": "public",
+          "line": 210
+        }
+      ],
+      "service_id": null,
+      "registration": "No custom services.yml registration found; listed as utility/class only."
+    },
+    {
+      "kind": "class",
+      "class": "to",
+      "short_name": "to",
+      "file": "themes/custom/tripzee/tripzee.theme",
+      "line": 7,
+      "extends": null,
+      "implements": [],
+      "methods": [],
+      "service_id": null,
+      "registration": "No custom services.yml registration found; listed as utility/class only."
+    },
+    {
+      "kind": "class",
+      "class": "to",
+      "short_name": "to",
+      "file": "themes/custom/tripzee/tripzee.theme",
+      "line": 7,
+      "extends": null,
+      "implements": [],
+      "methods": [],
+      "service_id": null,
+      "registration": "No custom services.yml registration found; listed as utility/class only."
+    }
+  ],
+  "roles": [
+    {
+      "role": "administrator",
+      "label": "Administrator",
+      "permissions": [],
+      "file": "config/sync/user.role.administrator.yml"
+    },
+    {
+      "role": "anonymous",
+      "label": "Anonymous user",
+      "permissions": [
+        "filter.format.restricted_html",
+        "comment",
+        "commerce_checkout",
+        "commerce_product",
+        "contact",
+        "entity_print_views",
+        "filter",
+        "media",
+        "search",
+        "system",
+        "access checkout",
+        "access comments",
+        "access content",
+        "access site-wide contact form",
+        "entity print views access",
+        "search content",
+        "use text format restricted_html",
+        "view commerce_product",
+        "view media"
+      ],
+      "file": "config/sync/user.role.anonymous.yml"
+    },
+    {
+      "role": "authenticated",
+      "label": "Authenticated user",
+      "permissions": [
+        "filter.format.basic_html",
+        "comment",
+        "commerce_checkout",
+        "commerce_order",
+        "commerce_payment",
+        "commerce_product",
+        "contact",
+        "entity_print_views",
+        "file",
+        "filter",
+        "fontawesome",
+        "media",
+        "profile",
+        "search",
+        "shortcut",
+        "system",
+        "access checkout",
+        "access comments",
+        "access content",
+        "access fontawesome additional settings",
+        "access shortcuts",
+        "access site-wide contact form",
+        "delete own files",
+        "entity print views access",
+        "manage own commerce_payment_method",
+        "post comments",
+        "search content",
+        "skip comment approval",
+        "use text format basic_html",
+        "view commerce_product",
+        "view media",
+        "view own commerce_order",
+        "view own profile",
+        "view user email addresses"
+      ],
+      "file": "config/sync/user.role.authenticated.yml"
+    },
+    {
+      "role": "content_editor",
+      "label": "Content editor",
+      "permissions": [
+        "block_content.type.basic",
+        "block_content.type.basic_block_with_image",
+        "block_content.type.cta_block",
+        "block_content.type.image_block",
+        "block_content.type.promo_block",
+        "entityqueue.entity_queue.featured_destination",
+        "entityqueue.entity_queue.featured_events",
+        "entityqueue.entity_queue.featured_packages",
+        "entityqueue.entity_queue.featured_regions",
+        "entityqueue.entity_queue.featured_rooms",
+        "entityqueue.entity_queue.featured_weekends",
+        "filter.format.full_html",
+        "media.type.image",
+        "media.type.remote_video",
+        "media.type.video",
+        "node.type.article",
+        "node.type.destination",
+        "node.type.page",
+        "node.type.team",
+        "node.type.testimonial",
+        "taxonomy.vocabulary.location_type",
+        "taxonomy.vocabulary.package_key",
+        "taxonomy.vocabulary.partners",
+        "taxonomy.vocabulary.regions",
+        "taxonomy.vocabulary.room_type",
+        "taxonomy.vocabulary.tags",
+        "block_content",
+        "comment",
+        "commerce",
+        "commerce_order",
+        "commerce_payment",
+        "commerce_pricelist",
+        "commerce_product",
+        "commerce_promotion",
+        "commerce_store",
+        "content_moderation",
+        "contextual",
+        "entity_clone",
+        "entity_print_views",
+        "entityqueue",
+        "file",
+        "filter",
+        "fivestar",
+        "media",
+        "node",
+        "path",
+        "profile",
+        "system",
+        "taxonomy",
+        "toolbar",
+        "webform",
+        "access administration pages",
+        "access block library",
+        "access commerce administration pages",
+        "access commerce_order overview",
+        "access commerce_pricelist overview",
+        "access commerce_product overview",
+        "access commerce_product_attribute overview",
+        "access commerce_promotion overview",
+        "access content",
+        "access content overview",
+        "access contextual links",
+        "access files overview",
+        "access media overview",
+        "access site in maintenance mode",
+        "access taxonomy overview",
+        "access toolbar",
+        "access user profiles",
+        "access webform overview",
+        "access webform submission user",
+        "administer account settings",
+        "administer commerce_payment",
+        "administer commerce_pricelist",
+        "administer commerce_product",
+        "administer commerce_product_attribute",
+        "administer media",
+        "administer nodes",
+        "administer url aliases",
+        "administer users",
+        "clone commerce_product entity",
+        "clone commerce_product_variation entity",
+        "clone paragraph entity",
+        "create article content",
+        "create cab commerce_product",
+        "create commerce_pricelist",
+        "create commerce_product_attribute",
+        "create commerce_promotion",
+        "create customer profile",
+        "create default commerce_order",
+        "create default commerce_product",
+        "create destination content",
+        "create image media",
+        "create media",
+        "create package commerce_product",
+        "create page content",
+        "create promo_block block content",
+        "create remote_video media",
+        "create room commerce_product",
+        "create team content",
+        "create terms in location_type",
+        "create terms in package_key",
+        "create terms in partners",
+        "create terms in regions",
+        "create terms in room_type",
+        "create terms in tags",
+        "create testimonial content",
+        "create trip commerce_product",
+        "create url aliases",
+        "create video media",
+        "create weekend_trip commerce_product",
+        "delete any cab commerce_product",
+        "delete any commerce_pricelist",
+        "delete any customer profile",
+        "delete any default commerce_product",
+        "delete any file",
+        "delete any image media",
+        "delete any media",
+        "delete any package commerce_product",
+        "delete any promo_block block content",
+        "delete any remote_video media",
+        "delete any room commerce_product",
+        "delete any testimonial content",
+        "delete any trip commerce_product",
+        "delete any video media",
+        "delete any weekend_trip commerce_product",
+        "delete article revisions",
+        "delete commerce_product_attribute",
+        "delete default commerce_order",
+        "delete media",
+        "delete own article content",
+        "delete own cab commerce_product",
+        "delete own commerce_pricelist",
+        "delete own customer profile",
+        "delete own default commerce_product",
+        "delete own files",
+        "delete own image media",
+        "delete own package commerce_product",
+        "delete own page content",
+        "delete own remote_video media",
+        "delete own room commerce_product",
+        "delete own testimonial content",
+        "delete own trip commerce_product",
+        "delete own video media",
+        "delete own weekend_trip commerce_product",
+        "delete page revisions",
+        "delete testimonial revisions",
+        "duplicate any commerce_pricelist",
+        "duplicate any commerce_promotion",
+        "duplicate own commerce_pricelist",
+        "duplicate own commerce_promotion",
+        "edit any article content",
+        "edit any basic block content",
+        "edit any basic_block_with_image block content",
+        "edit any cta_block block content",
+        "edit any destination content",
+        "edit any image media",
+        "edit any image_block block content",
+        "edit any page content",
+        "edit any promo_block block content",
+        "edit any remote_video media",
+        "edit any team content",
+        "edit any testimonial content",
+        "edit any video media",
+        "edit own article content",
+        "edit own comments",
+        "edit own destination content",
+        "edit own image media",
+        "edit own page content",
+        "edit own remote_video media",
+        "edit own team content",
+        "edit own testimonial content",
+        "edit terms in location_type",
+        "edit terms in package_key",
+        "edit terms in regions",
+        "edit terms in room_type",
+        "edit terms in tags",
+        "entity print views access",
+        "manage cab commerce_order_item",
+        "manage cab commerce_product_variation",
+        "manage default commerce_order_item",
+        "manage default commerce_product_variation",
+        "manage package commerce_product_variation",
+        "manage room commerce_order_item",
+        "manage room commerce_product_variation",
+        "manage trip commerce_product_variation",
+        "manipulate all entityqueues",
+        "manipulate entityqueues",
+        "rate content",
+        "revert all revisions",
+        "update any cab commerce_product",
+        "update any commerce_payment_method",
+        "update any commerce_pricelist",
+        "update any commerce_promotion",
+        "update any customer profile",
+        "update any default commerce_product",
+        "update any media",
+        "update any package commerce_product",
+        "update any room commerce_product",
+        "update any trip commerce_product",
+        "update any weekend_trip commerce_product",
+        "update commerce_product_attribute",
+        "update default commerce_order",
+        "update featured_destination entityqueue",
+        "update featured_events entityqueue",
+        "update featured_packages entityqueue",
+        "update featured_regions entityqueue",
+        "update featured_rooms entityqueue",
+        "update featured_weekends entityqueue",
+        "update media",
+        "update own cab commerce_product",
+        "update own commerce_pricelist",
+        "update own commerce_promotion",
+        "update own customer profile",
+        "update own default commerce_product",
+        "update own package commerce_product",
+        "update own room commerce_product",
+        "update own trip commerce_product",
+        "update own weekend_trip commerce_product",
+        "use text format full_html",
+        "view all revisions",
+        "view any commerce_payment_method",
+        "view any customer profile",
+        "view any profile",
+        "view any unpublished content",
+        "view any webform submission",
+        "view cab commerce_product",
+        "view commerce_order",
+        "view commerce_pricelist",
+        "view commerce_product",
+        "view commerce_product_attribute",
+        "view commerce_promotion",
+        "view commerce_store",
+        "view default commerce_order",
+        "view default commerce_product",
+        "view media",
+        "view online commerce_store",
+        "view own customer profile",
+        "view own unpublished commerce_product",
+        "view own unpublished content",
+        "view own unpublished media",
+        "view own unpublished profile",
+        "view own webform submission",
+        "view package commerce_product",
+        "view room commerce_product",
+        "view the administration theme",
+        "view trip commerce_product",
+        "view user email addresses",
+        "view weekend_trip commerce_product"
+      ],
+      "file": "config/sync/user.role.content_editor.yml"
+    }
+  ],
+  "views": [
+    {
+      "id": "archive",
+      "label": "Archive",
+      "status": "false",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.archive.yml",
+      "display_count": 6
+    },
+    {
+      "id": "block_content",
+      "label": "Content blocks",
+      "status": "true",
+      "base_table": "block_content_field_data",
+      "file": "config/sync/views.view.block_content.yml",
+      "display_count": 4
+    },
+    {
+      "id": "blog",
+      "label": "Blog",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.blog.yml",
+      "display_count": 4
+    },
+    {
+      "id": "comment",
+      "label": "Comments",
+      "status": "true",
+      "base_table": "comment_field_data",
+      "file": "config/sync/views.view.comment.yml",
+      "display_count": 6
+    },
+    {
+      "id": "comments_recent",
+      "label": "Recent comments",
+      "status": "true",
+      "base_table": "comment_field_data",
+      "file": "config/sync/views.view.comments_recent.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_cart_block",
+      "label": "Cart block",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.commerce_cart_block.yml",
+      "display_count": 3
+    },
+    {
+      "id": "commerce_cart_form",
+      "label": "Cart form",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.commerce_cart_form.yml",
+      "display_count": 3
+    },
+    {
+      "id": "commerce_carts",
+      "label": "Carts",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.commerce_carts.yml",
+      "display_count": 5
+    },
+    {
+      "id": "commerce_checkout_order_summary",
+      "label": "Checkout order summary",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.commerce_checkout_order_summary.yml",
+      "display_count": 3
+    },
+    {
+      "id": "commerce_order_item_table",
+      "label": "Order items",
+      "status": "true",
+      "base_table": "commerce_order_item",
+      "file": "config/sync/views.view.commerce_order_item_table.yml",
+      "display_count": 2
+    },
+    {
+      "id": "commerce_order_payments",
+      "label": "Payments",
+      "status": "true",
+      "base_table": "commerce_payment",
+      "file": "config/sync/views.view.commerce_order_payments.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_orders",
+      "label": "Orders",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.commerce_orders.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_pricelist_prices",
+      "label": "Pricelist prices",
+      "status": "true",
+      "base_table": "commerce_pricelist_item",
+      "file": "config/sync/views.view.commerce_pricelist_prices.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_pricelist_product_prices",
+      "label": "Product prices",
+      "status": "true",
+      "base_table": "commerce_pricelist_item",
+      "file": "config/sync/views.view.commerce_pricelist_product_prices.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_pricelists",
+      "label": "Price lists",
+      "status": "true",
+      "base_table": "commerce_pricelist",
+      "file": "config/sync/views.view.commerce_pricelists.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_product_variation_prices",
+      "label": "Variation prices",
+      "status": "true",
+      "base_table": "commerce_pricelist_item",
+      "file": "config/sync/views.view.commerce_product_variation_prices.yml",
+      "display_count": 5
+    },
+    {
+      "id": "commerce_products",
+      "label": "Products",
+      "status": "true",
+      "base_table": "commerce_product_field_data",
+      "file": "config/sync/views.view.commerce_products.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_promotion_coupons",
+      "label": "Coupons",
+      "status": "true",
+      "base_table": "commerce_promotion_coupon",
+      "file": "config/sync/views.view.commerce_promotion_coupons.yml",
+      "display_count": 6
+    },
+    {
+      "id": "commerce_promotions",
+      "label": "Promotions",
+      "status": "true",
+      "base_table": "commerce_promotion_field_data",
+      "file": "config/sync/views.view.commerce_promotions.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_stores",
+      "label": "Stores",
+      "status": "true",
+      "base_table": "commerce_store_field_data",
+      "file": "config/sync/views.view.commerce_stores.yml",
+      "display_count": 4
+    },
+    {
+      "id": "commerce_user_orders",
+      "label": "User orders",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.commerce_user_orders.yml",
+      "display_count": 6
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.content.yml",
+      "display_count": 4
+    },
+    {
+      "id": "content_dashboard",
+      "label": "Content Management Dashboard",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.content_dashboard.yml",
+      "display_count": 10
+    },
+    {
+      "id": "content_recent",
+      "label": "Recent content",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.content_recent.yml",
+      "display_count": 4
+    },
+    {
+      "id": "custom_blocks",
+      "label": "Custom Blocks",
+      "status": "true",
+      "base_table": "block_content_field_data",
+      "file": "config/sync/views.view.custom_blocks.yml",
+      "display_count": 22
+    },
+    {
+      "id": "eca_log",
+      "label": "ECA Log",
+      "status": "true",
+      "base_table": "watchdog",
+      "file": "config/sync/views.view.eca_log.yml",
+      "display_count": 6
+    },
+    {
+      "id": "files",
+      "label": "Files",
+      "status": "true",
+      "base_table": "file_managed",
+      "file": "config/sync/views.view.files.yml",
+      "display_count": 6
+    },
+    {
+      "id": "flexslider_views_example",
+      "label": "FlexSlider Views Example",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.flexslider_views_example.yml",
+      "display_count": 16
+    },
+    {
+      "id": "frontpage",
+      "label": "Frontpage",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.frontpage.yml",
+      "display_count": 6
+    },
+    {
+      "id": "glossary",
+      "label": "Glossary",
+      "status": "false",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.glossary.yml",
+      "display_count": 6
+    },
+    {
+      "id": "home_page_slider",
+      "label": "Home Page Slider",
+      "status": "true",
+      "base_table": "block_content_field_data",
+      "file": "config/sync/views.view.home_page_slider.yml",
+      "display_count": 6
+    },
+    {
+      "id": "listing_block",
+      "label": "Listing Block",
+      "status": "true",
+      "base_table": "search_api_index_product",
+      "file": "config/sync/views.view.listing_block.yml",
+      "display_count": 28
+    },
+    {
+      "id": "media",
+      "label": "Media",
+      "status": "true",
+      "base_table": "media_field_data",
+      "file": "config/sync/views.view.media.yml",
+      "display_count": 4
+    },
+    {
+      "id": "media_library",
+      "label": "Media library",
+      "status": "true",
+      "base_table": "media_field_data",
+      "file": "config/sync/views.view.media_library.yml",
+      "display_count": 9
+    },
+    {
+      "id": "moderated_content",
+      "label": "Moderated content",
+      "status": "true",
+      "base_table": "node_field_revision",
+      "file": "config/sync/views.view.moderated_content.yml",
+      "display_count": 5
+    },
+    {
+      "id": "node_blocks",
+      "label": "Node Blocks",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.node_blocks.yml",
+      "display_count": 16
+    },
+    {
+      "id": "order_dashboard",
+      "label": "Order Management Dashboard",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.order_dashboard.yml",
+      "display_count": 6
+    },
+    {
+      "id": "order_mail",
+      "label": "Order Mail",
+      "status": "false",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.order_mail.yml",
+      "display_count": 16
+    },
+    {
+      "id": "order_overview",
+      "label": "Order Overview",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.order_overview.yml",
+      "display_count": 4
+    },
+    {
+      "id": "order_print",
+      "label": "Order Print",
+      "status": "true",
+      "base_table": "commerce_order",
+      "file": "config/sync/views.view.order_print.yml",
+      "display_count": 14
+    },
+    {
+      "id": "product_blocks",
+      "label": "Product Blocks",
+      "status": "true",
+      "base_table": "commerce_product_field_data",
+      "file": "config/sync/views.view.product_blocks.yml",
+      "display_count": 42
+    },
+    {
+      "id": "product_management_dashboard",
+      "label": "Product Management Dashboard",
+      "status": "true",
+      "base_table": "commerce_product_field_data",
+      "file": "config/sync/views.view.product_management_dashboard.yml",
+      "display_count": 4
+    },
+    {
+      "id": "profiles",
+      "label": "Profiles",
+      "status": "true",
+      "base_table": "profile",
+      "file": "config/sync/views.view.profiles.yml",
+      "display_count": 4
+    },
+    {
+      "id": "queued_listing_block",
+      "label": "Queued Listing Block",
+      "status": "true",
+      "base_table": "commerce_product_field_data",
+      "file": "config/sync/views.view.queued_listing_block.yml",
+      "display_count": 12
+    },
+    {
+      "id": "redirect",
+      "label": "Redirect",
+      "status": "true",
+      "base_table": "redirect",
+      "file": "config/sync/views.view.redirect.yml",
+      "display_count": 4
+    },
+    {
+      "id": "sample_search",
+      "label": "Search",
+      "status": "true",
+      "base_table": "commerce_product_field_data",
+      "file": "config/sync/views.view.sample_search.yml",
+      "display_count": 8
+    },
+    {
+      "id": "scheduler_scheduled_commerce_product",
+      "label": "Scheduled Products",
+      "status": "true",
+      "base_table": "commerce_product_field_data",
+      "file": "config/sync/views.view.scheduler_scheduled_commerce_product.yml",
+      "display_count": 5
+    },
+    {
+      "id": "scheduler_scheduled_content",
+      "label": "Scheduled Content",
+      "status": "true",
+      "base_table": "node_field_revision",
+      "file": "config/sync/views.view.scheduler_scheduled_content.yml",
+      "display_count": 7
+    },
+    {
+      "id": "scheduler_scheduled_media",
+      "label": "Scheduled Media",
+      "status": "true",
+      "base_table": "media_field_revision",
+      "file": "config/sync/views.view.scheduler_scheduled_media.yml",
+      "display_count": 7
+    },
+    {
+      "id": "scheduler_scheduled_taxonomy_term",
+      "label": "Scheduled Taxonomy Terms",
+      "status": "true",
+      "base_table": "taxonomy_term_field_data",
+      "file": "config/sync/views.view.scheduler_scheduled_taxonomy_term.yml",
+      "display_count": 5
+    },
+    {
+      "id": "taxonomy_blocks",
+      "label": "Taxonomy Blocks",
+      "status": "true",
+      "base_table": "taxonomy_term_field_data",
+      "file": "config/sync/views.view.taxonomy_blocks.yml",
+      "display_count": 8
+    },
+    {
+      "id": "taxonomy_term",
+      "label": "Taxonomy term",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.taxonomy_term.yml",
+      "display_count": 6
+    },
+    {
+      "id": "team",
+      "label": "Team",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.team.yml",
+      "display_count": 6
+    },
+    {
+      "id": "testimonial",
+      "label": "Testimonial",
+      "status": "true",
+      "base_table": "node_field_data",
+      "file": "config/sync/views.view.testimonial.yml",
+      "display_count": 6
+    },
+    {
+      "id": "user_admin_people",
+      "label": "People",
+      "status": "true",
+      "base_table": "users_field_data",
+      "file": "config/sync/views.view.user_admin_people.yml",
+      "display_count": 6
+    },
+    {
+      "id": "user_blocks",
+      "label": "User Blocks",
+      "status": "true",
+      "base_table": "users_field_data",
+      "file": "config/sync/views.view.user_blocks.yml",
+      "display_count": 4
+    },
+    {
+      "id": "votingapi_votes",
+      "label": "Votingapi Votes",
+      "status": "true",
+      "base_table": "votingapi_vote",
+      "file": "config/sync/views.view.votingapi_votes.yml",
+      "display_count": 6
+    },
+    {
+      "id": "watchdog",
+      "label": "Watchdog",
+      "status": "true",
+      "base_table": "watchdog",
+      "file": "config/sync/views.view.watchdog.yml",
+      "display_count": 4
+    },
+    {
+      "id": "webform_submissions",
+      "label": "Webform submissions",
+      "status": "true",
+      "base_table": "webform_submission",
+      "file": "config/sync/views.view.webform_submissions.yml",
+      "display_count": 11
+    },
+    {
+      "id": "webform_submissions_block",
+      "label": "Webform Submissions",
+      "status": "true",
+      "base_table": "webform_submission",
+      "file": "config/sync/views.view.webform_submissions_block.yml",
+      "display_count": 8
+    },
+    {
+      "id": "webform_submissions_custom",
+      "label": "Webform submissions custom",
+      "status": "true",
+      "base_table": "webform_submission",
+      "file": "config/sync/views.view.webform_submissions_custom.yml",
+      "display_count": 11
+    },
+    {
+      "id": "who_s_new",
+      "label": "Who's new",
+      "status": "true",
+      "base_table": "users_field_data",
+      "file": "config/sync/views.view.who_s_new.yml",
+      "display_count": 4
+    },
+    {
+      "id": "who_s_online",
+      "label": "Who's online block",
+      "status": "true",
+      "base_table": "users_field_data",
+      "file": "config/sync/views.view.who_s_online.yml",
+      "display_count": 4
+    }
+  ],
+  "webforms": [
+    {
+      "id": "contact",
+      "title": "Contact",
+      "status": "open",
+      "file": "config/sync/webform.webform.contact.yml",
+      "handler_count": 6
+    },
+    {
+      "id": "enquiry_form",
+      "title": "Enquiry Form",
+      "status": "open",
+      "file": "config/sync/webform.webform.enquiry_form.yml",
+      "handler_count": 3
+    },
+    {
+      "id": "partner_with_us",
+      "title": "Partner with Us",
+      "status": "open",
+      "file": "config/sync/webform.webform.partner_with_us.yml",
+      "handler_count": 1
+    },
+    {
+      "id": "request_callback",
+      "title": "Request Callback",
+      "status": "open",
+      "file": "config/sync/webform.webform.request_callback.yml",
+      "handler_count": 2
+    }
+  ],
+  "workflows": [
+    {
+      "id": "editorial",
+      "label": "Editorial",
+      "type": "content_moderation",
+      "states": [
+        "archived",
+        "draft",
+        "published",
+        "archive",
+        "archived_draft",
+        "archived_published",
+        "create_new_draft",
+        "publish"
+      ],
+      "transitions": [
+        "archived",
+        "draft",
+        "published",
+        "archive",
+        "archived_draft",
+        "archived_published",
+        "create_new_draft",
+        "publish"
+      ],
+      "file": "config/sync/workflows.workflow.editorial.yml"
+    }
+  ],
+  "frontend": [
+    {
+      "path": "modules/custom/cab_booking/cab_booking.libraries.yml",
+      "type": "yml",
+      "lines": 7,
+      "purpose": "Drupal asset library definition"
+    },
+    {
+      "path": "modules/custom/cab_booking/js/cab_booking.js",
+      "type": "js",
+      "lines": 1,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.libraries.yml",
+      "type": "yml",
+      "lines": 9,
+      "purpose": "Drupal asset library definition"
+    },
+    {
+      "path": "modules/custom/drupal_commerce_razorpay/js/drupal_commerce_razorpay.js",
+      "type": "js",
+      "lines": 57,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/mobile_verify/assets/mobile_verify.css",
+      "type": "css",
+      "lines": 56,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "modules/custom/mobile_verify/assets/mobile_verify.js",
+      "type": "js",
+      "lines": 109,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/mobile_verify/assets/mobile_verify.scss",
+      "type": "scss",
+      "lines": 63,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "modules/custom/mobile_verify/mobile_verify.libraries.yml",
+      "type": "yml",
+      "lines": 10,
+      "purpose": "Drupal asset library definition"
+    },
+    {
+      "path": "modules/custom/multiple_dates/css/multiple-dates.css",
+      "type": "css",
+      "lines": 291,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "modules/custom/multiple_dates/js/jquery-ui.multidatespicker.js",
+      "type": "js",
+      "lines": 498,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/multiple_dates/js/multiple-dates.js",
+      "type": "js",
+      "lines": 121,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/multiple_dates/multiple_dates.libraries.yml",
+      "type": "yml",
+      "lines": 17,
+      "purpose": "Drupal asset library definition"
+    },
+    {
+      "path": "modules/custom/multiple_dates/templates/multiple-dates.html.twig",
+      "type": "twig",
+      "lines": 16,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "modules/custom/package_booking/js/package_booking.js",
+      "type": "js",
+      "lines": 1,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/package_booking/package_booking.libraries.yml",
+      "type": "yml",
+      "lines": 7,
+      "purpose": "Drupal asset library definition"
+    },
+    {
+      "path": "modules/custom/room_booking/js/room_booking.js",
+      "type": "js",
+      "lines": 1,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/room_booking/room_booking.libraries.yml",
+      "type": "yml",
+      "lines": 7,
+      "purpose": "Drupal asset library definition"
+    },
+    {
+      "path": "modules/custom/simple_login/js/simple_login.js",
+      "type": "js",
+      "lines": 69,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/simple_login/js/simple_login_test.js",
+      "type": "js",
+      "lines": 43,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "modules/custom/simple_login/simple_login.libraries.yml",
+      "type": "yml",
+      "lines": 7,
+      "purpose": "Drupal asset library definition"
+    },
+    {
+      "path": "modules/custom/weekend_trip_booking/weekend_trip_booking.libraries.yml",
+      "type": "yml",
+      "lines": 8,
+      "purpose": "Drupal asset library definition"
+    },
+    {
+      "path": "themes/custom/tripzee/css/global.css",
+      "type": "css",
+      "lines": 1924,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/global.scss",
+      "type": "scss",
+      "lines": 1917,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/home.css",
+      "type": "css",
+      "lines": 1196,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/home.scss",
+      "type": "scss",
+      "lines": 1116,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/node.css",
+      "type": "css",
+      "lines": 3907,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/node.scss",
+      "type": "scss",
+      "lines": 3784,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/pdf.css",
+      "type": "css",
+      "lines": 6,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/pdf.scss",
+      "type": "scss",
+      "lines": 5,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/product.css",
+      "type": "css",
+      "lines": 4335,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/product.scss",
+      "type": "scss",
+      "lines": 3884,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/search.css",
+      "type": "css",
+      "lines": 650,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/search.scss",
+      "type": "scss",
+      "lines": 649,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/variables.css",
+      "type": "css",
+      "lines": 4,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/css/variables.scss",
+      "type": "scss",
+      "lines": 32,
+      "purpose": "Theme/module styling"
+    },
+    {
+      "path": "themes/custom/tripzee/js/tripzee.js",
+      "type": "js",
+      "lines": 403,
+      "purpose": "Drupal behavior/front-end script"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--article.html.twig",
+      "type": "twig",
+      "lines": 101,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--destination.html.twig",
+      "type": "twig",
+      "lines": 142,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--about.html.twig",
+      "type": "twig",
+      "lines": 118,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--admin-dashboard.html.twig",
+      "type": "twig",
+      "lines": 289,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--cabs.html.twig",
+      "type": "twig",
+      "lines": 153,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--contact-us.html.twig",
+      "type": "twig",
+      "lines": 164,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--events.html.twig",
+      "type": "twig",
+      "lines": 110,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--faqs.html.twig",
+      "type": "twig",
+      "lines": 102,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--packages-regions.html.twig",
+      "type": "twig",
+      "lines": 105,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--packages.html.twig",
+      "type": "twig",
+      "lines": 166,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--stays.html.twig",
+      "type": "twig",
+      "lines": 128,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--team.html.twig",
+      "type": "twig",
+      "lines": 109,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--page--weekend-trips.html.twig",
+      "type": "twig",
+      "lines": 123,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--team.html.twig",
+      "type": "twig",
+      "lines": 119,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node--testimonial.html.twig",
+      "type": "twig",
+      "lines": 115,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/content/node.html.twig",
+      "type": "twig",
+      "lines": 102,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/email/111commerce-order-receipt.html copy.twig",
+      "type": "twig",
+      "lines": 59,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/email/commerce-order-receipt.html.twig",
+      "type": "twig",
+      "lines": 62,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/email/email-wrap.html.twig",
+      "type": "twig",
+      "lines": 45,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/email/email.html.twig",
+      "type": "twig",
+      "lines": 15,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/email/webform-email-html.html.twig",
+      "type": "twig",
+      "lines": 18,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/email/webform-email-message-html.html.twig",
+      "type": "twig",
+      "lines": 49,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/includes/footer.html.twig",
+      "type": "twig",
+      "lines": 41,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/includes/header.html.twig",
+      "type": "twig",
+      "lines": 27,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/commerce-checkout-pane--login.html.twig",
+      "type": "twig",
+      "lines": 24,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/html.html.twig",
+      "type": "twig",
+      "lines": 75,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/maintenance-page.html.twig",
+      "type": "twig",
+      "lines": 23,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--403.html.twig",
+      "type": "twig",
+      "lines": 23,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--404.html.twig",
+      "type": "twig",
+      "lines": 23,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--cart.html.twig",
+      "type": "twig",
+      "lines": 21,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--checkout--complete.html.twig",
+      "type": "twig",
+      "lines": 21,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--checkout--login.html.twig",
+      "type": "twig",
+      "lines": 21,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--checkout--payment.html.twig",
+      "type": "twig",
+      "lines": 21,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--checkout.html.twig",
+      "type": "twig",
+      "lines": 21,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--front.html.twig",
+      "type": "twig",
+      "lines": 209,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--path--partner-with-us.html.twig",
+      "type": "twig",
+      "lines": 81,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--user--edit.html.twig",
+      "type": "twig",
+      "lines": 30,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--user--login.html.twig",
+      "type": "twig",
+      "lines": 26,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--user--password.html.twig",
+      "type": "twig",
+      "lines": 26,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--user--register.html.twig",
+      "type": "twig",
+      "lines": 28,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--user--reset.html.twig",
+      "type": "twig",
+      "lines": 29,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page--user.html.twig",
+      "type": "twig",
+      "lines": 30,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/layout/page.html.twig",
+      "type": "twig",
+      "lines": 81,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/print/html--order-print.html.twig",
+      "type": "twig",
+      "lines": 38,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/print/views-view.html.twig",
+      "type": "twig",
+      "lines": 157,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/product/commerce-product--cab.html.twig",
+      "type": "twig",
+      "lines": 81,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/product/commerce-product--package.html.twig",
+      "type": "twig",
+      "lines": 169,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/product/commerce-product--room.html.twig",
+      "type": "twig",
+      "lines": 134,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/product/commerce-product--trip.html.twig",
+      "type": "twig",
+      "lines": 121,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/product/commerce-product--weekend-trip.html.twig",
+      "type": "twig",
+      "lines": 127,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/product/taxonomy-term--regions.html.twig",
+      "type": "twig",
+      "lines": 50,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/search/page--search--cabs.html.twig",
+      "type": "twig",
+      "lines": 34,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/search/page--search--packages.html.twig",
+      "type": "twig",
+      "lines": 34,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/templates/search/page--search--stays.html.twig",
+      "type": "twig",
+      "lines": 38,
+      "purpose": "Twig template override"
+    },
+    {
+      "path": "themes/custom/tripzee/tripzee.libraries.yml",
+      "type": "yml",
+      "lines": 24,
+      "purpose": "Drupal asset library definition"
+    }
+  ],
+  "dependency_graph": {
+    "module_to_module": [
+      {
+        "module": "cab_booking",
+        "dependencies": []
+      },
+      {
+        "module": "drupal_commerce_razorpay",
+        "dependencies": [
+          "commerce_payment"
+        ]
+      },
+      {
+        "module": "mobile_verify",
+        "dependencies": []
+      },
+      {
+        "module": "multiple_dates",
+        "dependencies": [
+          "field",
+          "jquery_ui_datepicker"
+        ]
+      },
+      {
+        "module": "package_booking",
+        "dependencies": []
+      },
+      {
+        "module": "room_booking",
+        "dependencies": []
+      },
+      {
+        "module": "simple_login",
+        "dependencies": []
+      },
+      {
+        "module": "weekend_trip_booking",
+        "dependencies": []
+      }
+    ],
+    "controller_to_service": [
+      {
+        "controller": "Drupal\\drupal_commerce_razorpay\\Controller\\IPNController",
+        "services": "No constructor/container injection detected"
+      },
+      {
+        "controller": "Drupal\\drupal_commerce_razorpay\\Controller\\RzpController",
+        "services": "No constructor/container injection detected"
+      },
+      {
+        "controller": "Drupal\\mobile_verify\\Controller\\MobileVerifyController",
+        "services": "No constructor/container injection detected"
+      },
+      {
+        "controller": "Drupal\\simple_login\\Controller\\SimpleLoginController",
+        "services": "No constructor/container injection detected"
+      }
+    ],
+    "service_to_repository": [],
+    "repository_to_database": [],
+    "controller_to_api": [
+      {
+        "controller": "Drupal\\drupal_commerce_razorpay\\Controller\\IPNController",
+        "route": "drupal_commerce_razorpay.ipn_handler",
+        "endpoint": "/payment/ipn-handler"
+      },
+      {
+        "controller": "Drupal\\drupal_commerce_razorpay\\Controller\\RzpController",
+        "route": "drupal_commerce_razorpay.capturePayment",
+        "endpoint": "/capturePayment"
+      },
+      {
+        "controller": "Drupal\\mobile_verify\\Controller\\MobileVerifyController",
+        "route": "mobile_verify.generate_otp",
+        "endpoint": "/generate-otp"
+      },
+      {
+        "controller": "Drupal\\simple_login\\Controller\\SimpleLoginController",
+        "route": "simple_login.generate_otp",
+        "endpoint": "/generate-otp"
+      }
+    ],
+    "module_to_configuration": [
+      {
+        "module": "cab_booking",
+        "config_files": []
+      },
+      {
+        "module": "drupal_commerce_razorpay",
+        "config_files": [
+          "config/sync/drupal_commerce_razorpay.settings.yml"
+        ]
+      },
+      {
+        "module": "mobile_verify",
+        "config_files": []
+      },
+      {
+        "module": "multiple_dates",
+        "config_files": []
+      },
+      {
+        "module": "package_booking",
+        "config_files": []
+      },
+      {
+        "module": "room_booking",
+        "config_files": []
+      },
+      {
+        "module": "simple_login",
+        "config_files": []
+      },
+      {
+        "module": "weekend_trip_booking",
+        "config_files": []
+      }
+    ],
+    "module_to_entity_bundle": [
+      {
+        "module": "cab_booking",
+        "bundles": [
+          "commerce_product.cab",
+          "commerce_order_item.cab"
+        ]
+      },
+      {
+        "module": "room_booking",
+        "bundles": [
+          "commerce_product.room",
+          "commerce_order_item.room"
+        ]
+      },
+      {
+        "module": "package_booking",
+        "bundles": [
+          "commerce_product.package",
+          "commerce_product_variation.package"
+        ]
+      },
+      {
+        "module": "weekend_trip_booking",
+        "bundles": [
+          "commerce_product.weekend_trip",
+          "commerce_order_item.weekend_trip"
+        ]
+      },
+      {
+        "module": "multiple_dates",
+        "bundles": [
+          "commerce_product.cab",
+          "commerce_product.package",
+          "commerce_product.room",
+          "commerce_product.weekend_trip",
+          "commerce_product_variation.package"
+        ]
+      }
+    ]
+  },
+  "metrics": {
+    "total_files": 1393,
+    "custom_relevant_files": 1393,
+    "config_sync_files": 1074,
+    "total_php_like_files": 21,
+    "total_php_classes": 13,
+    "total_controllers": 4,
+    "total_services": 0,
+    "total_routes": 4,
+    "total_custom_modules": 8,
+    "total_custom_themes": 1,
+    "total_entities": 51,
+    "total_apis": 4,
+    "total_tests": 0,
+    "largest_custom_files": [
+      {
+        "path": "themes/custom/tripzee/css/product.css",
+        "lines": 4335
+      },
+      {
+        "path": "themes/custom/tripzee/css/node.css",
+        "lines": 3907
+      },
+      {
+        "path": "themes/custom/tripzee/css/product.scss",
+        "lines": 3884
+      },
+      {
+        "path": "themes/custom/tripzee/css/node.scss",
+        "lines": 3784
+      },
+      {
+        "path": "themes/custom/tripzee/css/global.css",
+        "lines": 1924
+      },
+      {
+        "path": "themes/custom/tripzee/css/global.scss",
+        "lines": 1917
+      },
+      {
+        "path": "themes/custom/tripzee/css/home.css",
+        "lines": 1196
+      },
+      {
+        "path": "themes/custom/tripzee/css/home.scss",
+        "lines": 1116
+      },
+      {
+        "path": "modules/custom/multiple_dates/font/Material-Design-Icons.svg",
+        "lines": 769
+      },
+      {
+        "path": "themes/custom/tripzee/css/search.css",
+        "lines": 650
+      },
+      {
+        "path": "themes/custom/tripzee/css/search.scss",
+        "lines": 649
+      },
+      {
+        "path": "modules/custom/drupal_commerce_razorpay/src/Plugin/Commerce/PaymentGateway/RazorpayCheckout.php",
+        "lines": 632
+      },
+      {
+        "path": "modules/custom/multiple_dates/js/jquery-ui.multidatespicker.js",
+        "lines": 498
+      },
+      {
+        "path": "modules/custom/multiple_dates/src/Plugin/Field/FieldWidget/MultipleDatesDefaultWidget.php",
+        "lines": 458
+      },
+      {
+        "path": "themes/custom/tripzee/js/tripzee.js",
+        "lines": 403
+      },
+      {
+        "path": "modules/custom/drupal_commerce_razorpay/LICENSE.txt",
+        "lines": 340
+      },
+      {
+        "path": "modules/custom/multiple_dates/LICENSE.txt",
+        "lines": 340
+      },
+      {
+        "path": "modules/custom/drupal_commerce_razorpay/src/PluginForm/RazorpayForm.php",
+        "lines": 309
+      },
+      {
+        "path": "modules/custom/multiple_dates/css/multiple-dates.css",
+        "lines": 291
+      },
+      {
+        "path": "themes/custom/tripzee/templates/content/node--page--admin-dashboard.html.twig",
+        "lines": 289
+      },
+      {
+        "path": "modules/custom/cab_booking/cab_booking.module",
+        "lines": 250
+      },
+      {
+        "path": "modules/custom/room_booking/room_booking.module",
+        "lines": 249
+      },
+      {
+        "path": "themes/custom/tripzee/templates/layout/page--front.html.twig",
+        "lines": 209
+      },
+      {
+        "path": "modules/custom/multiple_dates/src/Plugin/Field/FieldFormatter/MultipleDatesDefaultFormatter.php",
+        "lines": 180
+      },
+      {
+        "path": "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+        "lines": 180
+      }
+    ],
+    "complexity_hotspots": [
+      {
+        "path": "modules/custom/drupal_commerce_razorpay/src/Plugin/Commerce/PaymentGateway/RazorpayCheckout.php",
+        "lines": 632,
+        "functions": 12,
+        "drupal_static_calls": 18
+      },
+      {
+        "path": "modules/custom/multiple_dates/src/Plugin/Field/FieldWidget/MultipleDatesDefaultWidget.php",
+        "lines": 458,
+        "functions": 5,
+        "drupal_static_calls": 0
+      },
+      {
+        "path": "modules/custom/drupal_commerce_razorpay/src/PluginForm/RazorpayForm.php",
+        "lines": 309,
+        "functions": 5,
+        "drupal_static_calls": 14
+      },
+      {
+        "path": "modules/custom/cab_booking/cab_booking.module",
+        "lines": 250,
+        "functions": 5,
+        "drupal_static_calls": 6
+      },
+      {
+        "path": "modules/custom/room_booking/room_booking.module",
+        "lines": 249,
+        "functions": 5,
+        "drupal_static_calls": 6
+      },
+      {
+        "path": "themes/custom/tripzee/tripzee.theme",
+        "lines": 114,
+        "functions": 7,
+        "drupal_static_calls": 11
+      },
+      {
+        "path": "modules/custom/multiple_dates/src/Plugin/Field/FieldFormatter/MultipleDatesDefaultFormatter.php",
+        "lines": 180,
+        "functions": 4,
+        "drupal_static_calls": 0
+      },
+      {
+        "path": "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+        "lines": 180,
+        "functions": 3,
+        "drupal_static_calls": 4
+      },
+      {
+        "path": "modules/custom/package_booking/package_booking.module",
+        "lines": 131,
+        "functions": 3,
+        "drupal_static_calls": 4
+      },
+      {
+        "path": "modules/custom/drupal_commerce_razorpay/src/AutoWebhook.php",
+        "lines": 134,
+        "functions": 2,
+        "drupal_static_calls": 7
+      },
+      {
+        "path": "modules/custom/cab_booking/cab_booking_old.module",
+        "lines": 125,
+        "functions": 3,
+        "drupal_static_calls": 2
+      },
+      {
+        "path": "modules/custom/multiple_dates/src/Plugin/Field/FieldType/MultipleDatesFieldItem.php",
+        "lines": 102,
+        "functions": 3,
+        "drupal_static_calls": 0
+      },
+      {
+        "path": "modules/custom/simple_login/src/Controller/SimpleLoginController.php",
+        "lines": 113,
+        "functions": 1,
+        "drupal_static_calls": 4
+      },
+      {
+        "path": "modules/custom/multiple_dates/multiple_dates.module",
+        "lines": 58,
+        "functions": 3,
+        "drupal_static_calls": 3
+      },
+      {
+        "path": "modules/custom/simple_login/simple_login.module",
+        "lines": 42,
+        "functions": 2,
+        "drupal_static_calls": 4
+      },
+      {
+        "path": "modules/custom/mobile_verify/src/Controller/MobileVerifyController.php",
+        "lines": 57,
+        "functions": 1,
+        "drupal_static_calls": 1
+      },
+      {
+        "path": "modules/custom/drupal_commerce_razorpay/src/Controller/IPNController.php",
+        "lines": 34,
+        "functions": 1,
+        "drupal_static_calls": 1
+      },
+      {
+        "path": "modules/custom/drupal_commerce_razorpay/src/Controller/RzpController.php",
+        "lines": 34,
+        "functions": 1,
+        "drupal_static_calls": 0
+      },
+      {
+        "path": "modules/custom/mobile_verify/mobile_verify.module",
+        "lines": 18,
+        "functions": 1,
+        "drupal_static_calls": 0
+      },
+      {
+        "path": "autoload.php",
+        "lines": 17,
+        "functions": 0,
+        "drupal_static_calls": 0
+      }
+    ]
+  },
+  "observations": {
+    "confirmed": [
+      "No custom services.yml files were found under modules/custom.",
+      "No custom tests were found under modules/custom or themes/custom.",
+      "Custom booking modules use hook_form_alter and hook_commerce_order_item_presave style procedural code.",
+      "Razorpay integration includes a Commerce payment gateway plugin plus custom /capturePayment and /payment/ipn-handler routes.",
+      "simple_login and mobile_verify both declare /generate-otp POST routes, creating a route path collision at the URL level."
+    ],
+    "potential_issues": [
+      "Potential hardcoded/security-sensitive usage: key_secret in modules/custom/drupal_commerce_razorpay/src/AutoWebhook.php:29.",
+      "Potential hardcoded/security-sensitive usage: secret in modules/custom/drupal_commerce_razorpay/src/AutoWebhook.php:29.",
+      "Potential hardcoded/security-sensitive usage: key_secret in modules/custom/drupal_commerce_razorpay/src/Plugin/Commerce/PaymentGateway/RazorpayCheckout.php:57.",
+      "Potential hardcoded/security-sensitive usage: secret in modules/custom/drupal_commerce_razorpay/src/Plugin/Commerce/PaymentGateway/RazorpayCheckout.php:57.",
+      "Potential hardcoded/security-sensitive usage: key_secret in modules/custom/drupal_commerce_razorpay/src/PluginForm/RazorpayForm.php:162.",
+      "Potential hardcoded/security-sensitive usage: secret in modules/custom/drupal_commerce_razorpay/src/PluginForm/RazorpayForm.php:156.",
+      "Potential hardcoded/security-sensitive usage: apiKey in modules/custom/mobile_verify/src/Controller/MobileVerifyController.php:27.",
+      "Potential hardcoded/security-sensitive usage: apikey in modules/custom/mobile_verify/src/Controller/MobileVerifyController.php:38.",
+      "Potential hardcoded/security-sensitive usage: curl_init in modules/custom/mobile_verify/src/Controller/MobileVerifyController.php:41.",
+      "Potential hardcoded/security-sensitive usage: apiKey in modules/custom/simple_login/src/Controller/SimpleLoginController.php:47.",
+      "Potential hardcoded/security-sensitive usage: apikey in modules/custom/simple_login/src/Controller/SimpleLoginController.php:58.",
+      "Potential hardcoded/security-sensitive usage: curl_init in modules/custom/simple_login/src/Controller/SimpleLoginController.php:61.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--article.html.twig:95.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--destination.html.twig:94.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--about.html.twig:94.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--admin-dashboard.html.twig:89.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--cabs.html.twig:131.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--contact-us.html.twig:94.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--events.html.twig:96.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--faqs.html.twig:94.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--packages-regions.html.twig:94.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--packages.html.twig:101.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--stays.html.twig:100.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--team.html.twig:94.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--page--weekend-trips.html.twig:95.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--team.html.twig:106.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node--testimonial.html.twig:94.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/content/node.html.twig:94.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/includes/header.html.twig:15.",
+      "Potential hardcoded/security-sensitive usage: _access in themes/custom/tripzee/templates/layout/page--user--register.html.twig:15.",
+      "Booking availability checks call loadMultiple() on commerce_order storage and then iterate all completed orders; this is a potential performance hotspot on large order volumes.",
+      "Several routes declare _access TRUE or only CSRF token requirements; access posture should be reviewed against intended exposure.",
+      "OTP login resets user passwords to numeric OTPs and logs generated OTP values.",
+      "cab_booking_old.module contains older duplicate cab booking logic and dpm() debug usage."
+    ],
+    "assumptions": [
+      "Database tables for config entities and fields are inferred from Drupal entity/field storage conventions because no SQL dump or Drupal runtime schema inspection is present.",
+      "Entity business purposes are inferred from bundle names, labels, fields, and templates."
+    ]
+  }
+}

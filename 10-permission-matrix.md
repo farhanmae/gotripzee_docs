@@ -1,0 +1,336 @@
+# Permission Matrix
+
+## Custom Routes
+| Route | URL | Requirement | Module |
+| --- | --- | --- | --- |
+| drupal_commerce_razorpay.capturePayment | /capturePayment | {"_access":"TRUE"} | drupal_commerce_razorpay |
+| drupal_commerce_razorpay.ipn_handler | /payment/ipn-handler | {"_csrf_token":"TRUE"} | drupal_commerce_razorpay |
+| mobile_verify.generate_otp | /generate-otp | {"_access":"TRUE"} | mobile_verify |
+| simple_login.generate_otp | /generate-otp | {"_access":"TRUE"} | simple_login |
+
+## Roles
+
+### Administrator (`administrator`)
+- Source: `config/sync/user.role.administrator.yml`
+- Permission count: 0
+
+- No explicit permissions listed.
+
+
+### Anonymous user (`anonymous`)
+- Source: `config/sync/user.role.anonymous.yml`
+- Permission count: 19
+
+- `filter.format.restricted_html`
+- `comment`
+- `commerce_checkout`
+- `commerce_product`
+- `contact`
+- `entity_print_views`
+- `filter`
+- `media`
+- `search`
+- `system`
+- `access checkout`
+- `access comments`
+- `access content`
+- `access site-wide contact form`
+- `entity print views access`
+- `search content`
+- `use text format restricted_html`
+- `view commerce_product`
+- `view media`
+
+
+### Authenticated user (`authenticated`)
+- Source: `config/sync/user.role.authenticated.yml`
+- Permission count: 34
+
+- `filter.format.basic_html`
+- `comment`
+- `commerce_checkout`
+- `commerce_order`
+- `commerce_payment`
+- `commerce_product`
+- `contact`
+- `entity_print_views`
+- `file`
+- `filter`
+- `fontawesome`
+- `media`
+- `profile`
+- `search`
+- `shortcut`
+- `system`
+- `access checkout`
+- `access comments`
+- `access content`
+- `access fontawesome additional settings`
+- `access shortcuts`
+- `access site-wide contact form`
+- `delete own files`
+- `entity print views access`
+- `manage own commerce_payment_method`
+- `post comments`
+- `search content`
+- `skip comment approval`
+- `use text format basic_html`
+- `view commerce_product`
+- `view media`
+- `view own commerce_order`
+- `view own profile`
+- `view user email addresses`
+
+
+### Content editor (`content_editor`)
+- Source: `config/sync/user.role.content_editor.yml`
+- Permission count: 248
+
+- `block_content.type.basic`
+- `block_content.type.basic_block_with_image`
+- `block_content.type.cta_block`
+- `block_content.type.image_block`
+- `block_content.type.promo_block`
+- `entityqueue.entity_queue.featured_destination`
+- `entityqueue.entity_queue.featured_events`
+- `entityqueue.entity_queue.featured_packages`
+- `entityqueue.entity_queue.featured_regions`
+- `entityqueue.entity_queue.featured_rooms`
+- `entityqueue.entity_queue.featured_weekends`
+- `filter.format.full_html`
+- `media.type.image`
+- `media.type.remote_video`
+- `media.type.video`
+- `node.type.article`
+- `node.type.destination`
+- `node.type.page`
+- `node.type.team`
+- `node.type.testimonial`
+- `taxonomy.vocabulary.location_type`
+- `taxonomy.vocabulary.package_key`
+- `taxonomy.vocabulary.partners`
+- `taxonomy.vocabulary.regions`
+- `taxonomy.vocabulary.room_type`
+- `taxonomy.vocabulary.tags`
+- `block_content`
+- `comment`
+- `commerce`
+- `commerce_order`
+- `commerce_payment`
+- `commerce_pricelist`
+- `commerce_product`
+- `commerce_promotion`
+- `commerce_store`
+- `content_moderation`
+- `contextual`
+- `entity_clone`
+- `entity_print_views`
+- `entityqueue`
+- `file`
+- `filter`
+- `fivestar`
+- `media`
+- `node`
+- `path`
+- `profile`
+- `system`
+- `taxonomy`
+- `toolbar`
+- `webform`
+- `access administration pages`
+- `access block library`
+- `access commerce administration pages`
+- `access commerce_order overview`
+- `access commerce_pricelist overview`
+- `access commerce_product overview`
+- `access commerce_product_attribute overview`
+- `access commerce_promotion overview`
+- `access content`
+- `access content overview`
+- `access contextual links`
+- `access files overview`
+- `access media overview`
+- `access site in maintenance mode`
+- `access taxonomy overview`
+- `access toolbar`
+- `access user profiles`
+- `access webform overview`
+- `access webform submission user`
+- `administer account settings`
+- `administer commerce_payment`
+- `administer commerce_pricelist`
+- `administer commerce_product`
+- `administer commerce_product_attribute`
+- `administer media`
+- `administer nodes`
+- `administer url aliases`
+- `administer users`
+- `clone commerce_product entity`
+- `clone commerce_product_variation entity`
+- `clone paragraph entity`
+- `create article content`
+- `create cab commerce_product`
+- `create commerce_pricelist`
+- `create commerce_product_attribute`
+- `create commerce_promotion`
+- `create customer profile`
+- `create default commerce_order`
+- `create default commerce_product`
+- `create destination content`
+- `create image media`
+- `create media`
+- `create package commerce_product`
+- `create page content`
+- `create promo_block block content`
+- `create remote_video media`
+- `create room commerce_product`
+- `create team content`
+- `create terms in location_type`
+- `create terms in package_key`
+- `create terms in partners`
+- `create terms in regions`
+- `create terms in room_type`
+- `create terms in tags`
+- `create testimonial content`
+- `create trip commerce_product`
+- `create url aliases`
+- `create video media`
+- `create weekend_trip commerce_product`
+- `delete any cab commerce_product`
+- `delete any commerce_pricelist`
+- `delete any customer profile`
+- `delete any default commerce_product`
+- `delete any file`
+- `delete any image media`
+- `delete any media`
+- `delete any package commerce_product`
+- `delete any promo_block block content`
+- `delete any remote_video media`
+- `delete any room commerce_product`
+- `delete any testimonial content`
+- `delete any trip commerce_product`
+- `delete any video media`
+- `delete any weekend_trip commerce_product`
+- `delete article revisions`
+- `delete commerce_product_attribute`
+- `delete default commerce_order`
+- `delete media`
+- `delete own article content`
+- `delete own cab commerce_product`
+- `delete own commerce_pricelist`
+- `delete own customer profile`
+- `delete own default commerce_product`
+- `delete own files`
+- `delete own image media`
+- `delete own package commerce_product`
+- `delete own page content`
+- `delete own remote_video media`
+- `delete own room commerce_product`
+- `delete own testimonial content`
+- `delete own trip commerce_product`
+- `delete own video media`
+- `delete own weekend_trip commerce_product`
+- `delete page revisions`
+- `delete testimonial revisions`
+- `duplicate any commerce_pricelist`
+- `duplicate any commerce_promotion`
+- `duplicate own commerce_pricelist`
+- `duplicate own commerce_promotion`
+- `edit any article content`
+- `edit any basic block content`
+- `edit any basic_block_with_image block content`
+- `edit any cta_block block content`
+- `edit any destination content`
+- `edit any image media`
+- `edit any image_block block content`
+- `edit any page content`
+- `edit any promo_block block content`
+- `edit any remote_video media`
+- `edit any team content`
+- `edit any testimonial content`
+- `edit any video media`
+- `edit own article content`
+- `edit own comments`
+- `edit own destination content`
+- `edit own image media`
+- `edit own page content`
+- `edit own remote_video media`
+- `edit own team content`
+- `edit own testimonial content`
+- `edit terms in location_type`
+- `edit terms in package_key`
+- `edit terms in regions`
+- `edit terms in room_type`
+- `edit terms in tags`
+- `entity print views access`
+- `manage cab commerce_order_item`
+- `manage cab commerce_product_variation`
+- `manage default commerce_order_item`
+- `manage default commerce_product_variation`
+- `manage package commerce_product_variation`
+- `manage room commerce_order_item`
+- `manage room commerce_product_variation`
+- `manage trip commerce_product_variation`
+- `manipulate all entityqueues`
+- `manipulate entityqueues`
+- `rate content`
+- `revert all revisions`
+- `update any cab commerce_product`
+- `update any commerce_payment_method`
+- `update any commerce_pricelist`
+- `update any commerce_promotion`
+- `update any customer profile`
+- `update any default commerce_product`
+- `update any media`
+- `update any package commerce_product`
+- `update any room commerce_product`
+- `update any trip commerce_product`
+- `update any weekend_trip commerce_product`
+- `update commerce_product_attribute`
+- `update default commerce_order`
+- `update featured_destination entityqueue`
+- `update featured_events entityqueue`
+- `update featured_packages entityqueue`
+- `update featured_regions entityqueue`
+- `update featured_rooms entityqueue`
+- `update featured_weekends entityqueue`
+- `update media`
+- `update own cab commerce_product`
+- `update own commerce_pricelist`
+- `update own commerce_promotion`
+- `update own customer profile`
+- `update own default commerce_product`
+- `update own package commerce_product`
+- `update own room commerce_product`
+- `update own trip commerce_product`
+- `update own weekend_trip commerce_product`
+- `use text format full_html`
+- `view all revisions`
+- `view any commerce_payment_method`
+- `view any customer profile`
+- `view any profile`
+- `view any unpublished content`
+- `view any webform submission`
+- `view cab commerce_product`
+- `view commerce_order`
+- `view commerce_pricelist`
+- `view commerce_product`
+- `view commerce_product_attribute`
+- `view commerce_promotion`
+- `view commerce_store`
+- `view default commerce_order`
+- `view default commerce_product`
+- `view media`
+- `view online commerce_store`
+- `view own customer profile`
+- `view own unpublished commerce_product`
+- `view own unpublished content`
+- `view own unpublished media`
+- `view own unpublished profile`
+- `view own webform submission`
+- `view package commerce_product`
+- `view room commerce_product`
+- `view the administration theme`
+- `view trip commerce_product`
+- `view user email addresses`
+- `view weekend_trip commerce_product`

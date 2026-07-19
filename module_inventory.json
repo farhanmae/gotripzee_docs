@@ -1,0 +1,354 @@
+[
+  {
+    "name": "cab_booking",
+    "label": "Cab Booking",
+    "path": "modules/custom/cab_booking",
+    "description": "Custom module to simplify the cab booking.",
+    "package": "Custom",
+    "core_version_requirement": "^10",
+    "dependencies": [],
+    "files": [
+      "modules/custom/cab_booking/cab_booking.info.yml",
+      "modules/custom/cab_booking/cab_booking.libraries.yml",
+      "modules/custom/cab_booking/cab_booking.module",
+      "modules/custom/cab_booking/cab_booking_old.module",
+      "modules/custom/cab_booking/js/cab_booking.js"
+    ],
+    "entry_points": [
+      "modules/custom/cab_booking/cab_booking.module",
+      "modules/custom/cab_booking/cab_booking.libraries.yml"
+    ],
+    "hooks": [
+      {
+        "name": "cab_booking_form_commerce_order_item_add_to_cart_form_alter",
+        "file": "modules/custom/cab_booking/cab_booking.module",
+        "line": 25
+      },
+      {
+        "name": "cab_booking_availability_check",
+        "file": "modules/custom/cab_booking/cab_booking.module",
+        "line": 62
+      },
+      {
+        "name": "getDatesBetween",
+        "file": "modules/custom/cab_booking/cab_booking.module",
+        "line": 198
+      },
+      {
+        "name": "cab_booking_commerce_order_item_presave",
+        "file": "modules/custom/cab_booking/cab_booking.module",
+        "line": 217
+      },
+      {
+        "name": "cab_booking_availability_check_submit",
+        "file": "modules/custom/cab_booking/cab_booking.module",
+        "line": 236
+      }
+    ],
+    "has_routing": false,
+    "has_services": false,
+    "has_permissions": false,
+    "libraries": [
+      "modules/custom/cab_booking/cab_booking.libraries.yml"
+    ]
+  },
+  {
+    "name": "drupal_commerce_razorpay",
+    "label": "Commerce Razorpay",
+    "path": "modules/custom/drupal_commerce_razorpay",
+    "description": "Provides Commerce integration for the Razorpay Payments.",
+    "package": "Commerce (Custom)",
+    "core_version_requirement": "^10",
+    "dependencies": [
+      "commerce_payment"
+    ],
+    "files": [
+      "modules/custom/drupal_commerce_razorpay/config/schema/drupal_commerce_razorpay.schema.yml",
+      "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.info.yml",
+      "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.libraries.yml",
+      "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml",
+      "modules/custom/drupal_commerce_razorpay/js/drupal_commerce_razorpay.js",
+      "modules/custom/drupal_commerce_razorpay/src/AutoWebhook.php",
+      "modules/custom/drupal_commerce_razorpay/src/Controller/IPNController.php",
+      "modules/custom/drupal_commerce_razorpay/src/Controller/RzpController.php",
+      "modules/custom/drupal_commerce_razorpay/src/Plugin/Commerce/PaymentGateway/RazorpayCheckout.php",
+      "modules/custom/drupal_commerce_razorpay/src/Plugin/Commerce/PaymentGateway/RazorpayInterface.php",
+      "modules/custom/drupal_commerce_razorpay/src/PluginForm/RazorpayForm.php"
+    ],
+    "entry_points": [
+      "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml",
+      "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.libraries.yml"
+    ],
+    "hooks": [],
+    "has_routing": true,
+    "has_services": false,
+    "has_permissions": false,
+    "libraries": [
+      "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.libraries.yml"
+    ]
+  },
+  {
+    "name": "mobile_verify",
+    "label": "Mobile Number Verification",
+    "path": "modules/custom/mobile_verify",
+    "description": "Verifiy mobile number on user registration using a system-generated OTP.",
+    "package": "Custom",
+    "core_version_requirement": "^8 || ^9 || ^10",
+    "dependencies": [],
+    "files": [
+      "modules/custom/mobile_verify/assets/mobile_verify.css",
+      "modules/custom/mobile_verify/assets/mobile_verify.js",
+      "modules/custom/mobile_verify/assets/mobile_verify.scss",
+      "modules/custom/mobile_verify/mobile_verify.info.yml",
+      "modules/custom/mobile_verify/mobile_verify.libraries.yml",
+      "modules/custom/mobile_verify/mobile_verify.module",
+      "modules/custom/mobile_verify/mobile_verify.routing.yml",
+      "modules/custom/mobile_verify/src/Controller/MobileVerifyController.php"
+    ],
+    "entry_points": [
+      "modules/custom/mobile_verify/mobile_verify.module",
+      "modules/custom/mobile_verify/mobile_verify.routing.yml",
+      "modules/custom/mobile_verify/mobile_verify.libraries.yml"
+    ],
+    "hooks": [
+      {
+        "name": "mobile_verify_form_alter",
+        "file": "modules/custom/mobile_verify/mobile_verify.module",
+        "line": 8
+      }
+    ],
+    "has_routing": true,
+    "has_services": false,
+    "has_permissions": false,
+    "libraries": [
+      "modules/custom/mobile_verify/mobile_verify.libraries.yml"
+    ]
+  },
+  {
+    "name": "multiple_dates",
+    "label": "Multiple Dates",
+    "path": "modules/custom/multiple_dates",
+    "description": "Multiple Dates form element using the jQuery UI datetimepicker.",
+    "package": "Multiple Dates",
+    "core_version_requirement": "^8 || ^9 || ^10",
+    "dependencies": [
+      "field",
+      "jquery_ui_datepicker"
+    ],
+    "files": [
+      "modules/custom/multiple_dates/css/multiple-dates.css",
+      "modules/custom/multiple_dates/js/jquery-ui.multidatespicker.js",
+      "modules/custom/multiple_dates/js/multiple-dates.js",
+      "modules/custom/multiple_dates/multiple_dates.info.yml",
+      "modules/custom/multiple_dates/multiple_dates.libraries.yml",
+      "modules/custom/multiple_dates/multiple_dates.module",
+      "modules/custom/multiple_dates/src/Plugin/Field/FieldFormatter/MultipleDatesDefaultFormatter.php",
+      "modules/custom/multiple_dates/src/Plugin/Field/FieldType/MultipleDatesFieldItem.php",
+      "modules/custom/multiple_dates/src/Plugin/Field/FieldWidget/MultipleDatesDefaultWidget.php",
+      "modules/custom/multiple_dates/templates/multiple-dates.html.twig"
+    ],
+    "entry_points": [
+      "modules/custom/multiple_dates/multiple_dates.module",
+      "modules/custom/multiple_dates/multiple_dates.libraries.yml"
+    ],
+    "hooks": [
+      {
+        "name": "multiple_dates_help",
+        "file": "modules/custom/multiple_dates/multiple_dates.module",
+        "line": 14
+      },
+      {
+        "name": "multiple_dates_theme",
+        "file": "modules/custom/multiple_dates/multiple_dates.module",
+        "line": 37
+      },
+      {
+        "name": "get_formatted_date",
+        "file": "modules/custom/multiple_dates/multiple_dates.module",
+        "line": 54
+      }
+    ],
+    "has_routing": false,
+    "has_services": false,
+    "has_permissions": false,
+    "libraries": [
+      "modules/custom/multiple_dates/multiple_dates.libraries.yml"
+    ]
+  },
+  {
+    "name": "package_booking",
+    "label": "Package Booking",
+    "path": "modules/custom/package_booking",
+    "description": "Custom module to check unavailability of packages based on selected dates.",
+    "package": "Custom",
+    "core_version_requirement": "^10",
+    "dependencies": [],
+    "files": [
+      "modules/custom/package_booking/js/package_booking.js",
+      "modules/custom/package_booking/package_booking.info.yml",
+      "modules/custom/package_booking/package_booking.libraries.yml",
+      "modules/custom/package_booking/package_booking.module"
+    ],
+    "entry_points": [
+      "modules/custom/package_booking/package_booking.module",
+      "modules/custom/package_booking/package_booking.libraries.yml"
+    ],
+    "hooks": [
+      {
+        "name": "package_booking_form_commerce_order_item_add_to_cart_form_alter",
+        "file": "modules/custom/package_booking/package_booking.module",
+        "line": 26
+      },
+      {
+        "name": "package_booking_availability_check",
+        "file": "modules/custom/package_booking/package_booking.module",
+        "line": 63
+      },
+      {
+        "name": "package_booking_availability_check_submit",
+        "file": "modules/custom/package_booking/package_booking.module",
+        "line": 117
+      }
+    ],
+    "has_routing": false,
+    "has_services": false,
+    "has_permissions": false,
+    "libraries": [
+      "modules/custom/package_booking/package_booking.libraries.yml"
+    ]
+  },
+  {
+    "name": "room_booking",
+    "label": "Room Booking",
+    "path": "modules/custom/room_booking",
+    "description": "Custom module to simplify the room booking.",
+    "package": "Custom",
+    "core_version_requirement": "^10",
+    "dependencies": [],
+    "files": [
+      "modules/custom/room_booking/js/room_booking.js",
+      "modules/custom/room_booking/room_booking.info.yml",
+      "modules/custom/room_booking/room_booking.libraries.yml",
+      "modules/custom/room_booking/room_booking.module"
+    ],
+    "entry_points": [
+      "modules/custom/room_booking/room_booking.module",
+      "modules/custom/room_booking/room_booking.libraries.yml"
+    ],
+    "hooks": [
+      {
+        "name": "room_booking_form_commerce_order_item_pado_add_to_cart_form_alter",
+        "file": "modules/custom/room_booking/room_booking.module",
+        "line": 25
+      },
+      {
+        "name": "room_booking_availability_check",
+        "file": "modules/custom/room_booking/room_booking.module",
+        "line": 61
+      },
+      {
+        "name": "getDatesBetweenRoom",
+        "file": "modules/custom/room_booking/room_booking.module",
+        "line": 197
+      },
+      {
+        "name": "room_booking_commerce_order_item_presave",
+        "file": "modules/custom/room_booking/room_booking.module",
+        "line": 216
+      },
+      {
+        "name": "room_booking_availability_check_submit",
+        "file": "modules/custom/room_booking/room_booking.module",
+        "line": 235
+      }
+    ],
+    "has_routing": false,
+    "has_services": false,
+    "has_permissions": false,
+    "libraries": [
+      "modules/custom/room_booking/room_booking.libraries.yml"
+    ]
+  },
+  {
+    "name": "simple_login",
+    "label": "Simple Login",
+    "path": "modules/custom/simple_login",
+    "description": "Allows users to log in using a system-generated OTP code instead of a password.",
+    "package": "Custom",
+    "core_version_requirement": "^8 || ^9 || ^10",
+    "dependencies": [],
+    "files": [
+      "modules/custom/simple_login/js/simple_login.js",
+      "modules/custom/simple_login/js/simple_login_test.js",
+      "modules/custom/simple_login/simple_login.info.yml",
+      "modules/custom/simple_login/simple_login.libraries.yml",
+      "modules/custom/simple_login/simple_login.module",
+      "modules/custom/simple_login/simple_login.routing.yml",
+      "modules/custom/simple_login/src/Controller/SimpleLoginController.php"
+    ],
+    "entry_points": [
+      "modules/custom/simple_login/simple_login.module",
+      "modules/custom/simple_login/simple_login.routing.yml",
+      "modules/custom/simple_login/simple_login.libraries.yml"
+    ],
+    "hooks": [
+      {
+        "name": "simple_login_form_alter",
+        "file": "modules/custom/simple_login/simple_login.module",
+        "line": 8
+      },
+      {
+        "name": "simple_login_user_logout",
+        "file": "modules/custom/simple_login/simple_login.module",
+        "line": 22
+      }
+    ],
+    "has_routing": true,
+    "has_services": false,
+    "has_permissions": false,
+    "libraries": [
+      "modules/custom/simple_login/simple_login.libraries.yml"
+    ]
+  },
+  {
+    "name": "weekend_trip_booking",
+    "label": "Weekend Trip Booking",
+    "path": "modules/custom/weekend_trip_booking",
+    "description": "Custom module to simplify the weekend trip booking.",
+    "package": "Custom",
+    "core_version_requirement": "^10",
+    "dependencies": [],
+    "files": [
+      "modules/custom/weekend_trip_booking/weekend_trip_booking.info.yml",
+      "modules/custom/weekend_trip_booking/weekend_trip_booking.libraries.yml",
+      "modules/custom/weekend_trip_booking/weekend_trip_booking.module"
+    ],
+    "entry_points": [
+      "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+      "modules/custom/weekend_trip_booking/weekend_trip_booking.libraries.yml"
+    ],
+    "hooks": [
+      {
+        "name": "weekend_trip_booking_form_commerce_order_item_add_to_cart_form_alter",
+        "file": "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+        "line": 25
+      },
+      {
+        "name": "weekend_trip_booking_availability_check",
+        "file": "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+        "line": 61
+      },
+      {
+        "name": "weekend_trip_booking_availability_check_submit",
+        "file": "modules/custom/weekend_trip_booking/weekend_trip_booking.module",
+        "line": 166
+      }
+    ],
+    "has_routing": false,
+    "has_services": false,
+    "has_permissions": false,
+    "libraries": [
+      "modules/custom/weekend_trip_booking/weekend_trip_booking.libraries.yml"
+    ]
+  }
+]

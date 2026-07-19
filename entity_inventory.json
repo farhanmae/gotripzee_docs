@@ -1,0 +1,2345 @@
+[
+  {
+    "entity_type": "block_content",
+    "bundle": "basic",
+    "name": "Basic block",
+    "file": "config/sync/block_content.type.basic.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Body",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.basic.body.yml",
+        "storage_file": "config/sync/field.storage.block_content.body.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "block_content",
+    "bundle": "basic_block_with_image",
+    "name": "Basic Block with Image",
+    "file": "config/sync/block_content.type.basic_block_with_image.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.basic_block_with_image.field_image.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_image.yml"
+      },
+      {
+        "field_name": "field_secondary_text",
+        "label": "Secondary Text",
+        "type": "string_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.basic_block_with_image.field_secondary_text.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_secondary_text.yml"
+      },
+      {
+        "field_name": "field_title",
+        "label": "Title",
+        "type": "string_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.basic_block_with_image.field_title.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_title.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "block_content",
+    "bundle": "cta_block",
+    "name": "CTA Block",
+    "file": "config/sync/block_content.type.cta_block.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_button",
+        "label": "Button",
+        "type": "link",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.cta_block.field_button.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_button.yml"
+      },
+      {
+        "field_name": "field_media",
+        "label": "Image/Video",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.cta_block.field_media.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_media.yml"
+      },
+      {
+        "field_name": "field_secondary_text",
+        "label": "Secondary Text",
+        "type": "string_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.cta_block.field_secondary_text.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_secondary_text.yml"
+      },
+      {
+        "field_name": "field_title",
+        "label": "Title",
+        "type": "string_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.cta_block.field_title.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_title.yml"
+      }
+    ],
+    "relationships": [
+      "field_media"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "block_content",
+    "bundle": "image_block",
+    "name": "Image Block",
+    "file": "config/sync/block_content.type.image_block.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_featured_on",
+        "label": "Featured On",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.image_block.field_featured_on.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_featured_on.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.image_block.field_image.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_image.yml"
+      },
+      {
+        "field_name": "field_link",
+        "label": "Link",
+        "type": "link",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.image_block.field_link.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_link.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "block_content",
+    "bundle": "promo_block",
+    "name": "Promo Block",
+    "file": "config/sync/block_content.type.promo_block.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_button",
+        "label": "Link",
+        "type": "link",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.block_content.promo_block.field_button.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_button.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.block_content.promo_block.field_image.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_image.yml"
+      },
+      {
+        "field_name": "field_mobile_image",
+        "label": "Mobile Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.block_content.promo_block.field_mobile_image.yml",
+        "storage_file": "config/sync/field.storage.block_content.field_mobile_image.yml"
+      }
+    ],
+    "relationships": [
+      "field_image",
+      "field_mobile_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "commerce_order_item",
+    "bundle": "cab",
+    "name": "Cab",
+    "file": "config/sync/commerce_order.commerce_order_item_type.cab.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_date",
+        "label": "Date",
+        "type": "daterange",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_order_item.cab.field_date.yml",
+        "storage_file": "config/sync/field.storage.commerce_order_item.field_date.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce order item type used by booking flows."
+  },
+  {
+    "entity_type": "commerce_order_item",
+    "bundle": "default",
+    "name": "Default",
+    "file": "config/sync/commerce_order.commerce_order_item_type.default.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_booking_date",
+        "label": "Date of Arrival",
+        "type": "datetime",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.commerce_order_item.default.field_booking_date.yml",
+        "storage_file": "config/sync/field.storage.commerce_order_item.field_booking_date.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce order item type used by booking flows."
+  },
+  {
+    "entity_type": "commerce_order_item",
+    "bundle": "event",
+    "name": "Event",
+    "file": "config/sync/commerce_order.commerce_order_item_type.event.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce order item type used by booking flows."
+  },
+  {
+    "entity_type": "commerce_order_item",
+    "bundle": "room",
+    "name": "Stay",
+    "file": "config/sync/commerce_order.commerce_order_item_type.room.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_adults",
+        "label": "No. of Adults",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_order_item.room.field_adults.yml",
+        "storage_file": "config/sync/field.storage.commerce_order_item.field_adults.yml"
+      },
+      {
+        "field_name": "field_bed",
+        "label": "Extra Adult",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_order_item.room.field_bed.yml",
+        "storage_file": "config/sync/field.storage.commerce_order_item.field_bed.yml"
+      },
+      {
+        "field_name": "field_children",
+        "label": "No. of Children",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_order_item.room.field_children.yml",
+        "storage_file": "config/sync/field.storage.commerce_order_item.field_children.yml"
+      },
+      {
+        "field_name": "field_date",
+        "label": "Date",
+        "type": "daterange",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_order_item.room.field_date.yml",
+        "storage_file": "config/sync/field.storage.commerce_order_item.field_date.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce order item type used by booking flows."
+  },
+  {
+    "entity_type": "commerce_order_item",
+    "bundle": "weekend_trip",
+    "name": "Weekend Trip",
+    "file": "config/sync/commerce_order.commerce_order_item_type.weekend_trip.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_booking_date",
+        "label": "Booking Date",
+        "type": "datetime",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.commerce_order_item.weekend_trip.field_booking_date.yml",
+        "storage_file": "config/sync/field.storage.commerce_order_item.field_booking_date.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce order item type used by booking flows."
+  },
+  {
+    "entity_type": "commerce_product",
+    "bundle": "cab",
+    "name": "Cab",
+    "file": "config/sync/commerce_product.commerce_product_type.cab.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Body",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.body.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+      },
+      {
+        "field_name": "field_availability",
+        "label": "Availability",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_availability.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_availability.yml"
+      },
+      {
+        "field_name": "field_deposit_percentage",
+        "label": "Deposit Percentage",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_deposit_percentage.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+      },
+      {
+        "field_name": "field_destinations",
+        "label": "Destinations",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_destinations.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_destinations.yml"
+      },
+      {
+        "field_name": "field_disable_booking",
+        "label": "Disable Booking",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_disable_booking.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_image.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_image.yml"
+      },
+      {
+        "field_name": "field_key_points",
+        "label": "Key Points",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_key_points.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_key_points.yml"
+      },
+      {
+        "field_name": "field_meta_tags",
+        "label": "Meta Tags",
+        "type": "metatag",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_meta_tags.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+      },
+      {
+        "field_name": "field_seating_capacity",
+        "label": "Seating Capacity",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_seating_capacity.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_seating_capacity.yml"
+      },
+      {
+        "field_name": "field_sold_out",
+        "label": "Sold Out",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_sold_out.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_sold_out.yml"
+      },
+      {
+        "field_name": "field_unavailable_dates",
+        "label": "Unavailable Dates",
+        "type": "multiple_dates",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_unavailable_dates.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_unavailable_dates.yml"
+      },
+      {
+        "field_name": "field_vehicle_type",
+        "label": "Vehicle Type",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.cab.field_vehicle_type.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_vehicle_type.yml"
+      }
+    ],
+    "relationships": [
+      "field_destinations",
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+  },
+  {
+    "entity_type": "commerce_product",
+    "bundle": "default",
+    "name": "Default",
+    "file": "config/sync/commerce_product.commerce_product_type.default.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Body",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.default.body.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+  },
+  {
+    "entity_type": "commerce_product",
+    "bundle": "package",
+    "name": "Package",
+    "file": "config/sync/commerce_product.commerce_product_type.package.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Overview",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.body.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+      },
+      {
+        "field_name": "field_comparison_text",
+        "label": "Comparison Text",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_comparison_text.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_comparison_text.yml"
+      },
+      {
+        "field_name": "field_deposit_percentage",
+        "label": "Deposit Percentage",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_deposit_percentage.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+      },
+      {
+        "field_name": "field_destination",
+        "label": "Destination",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_destination.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_destination.yml"
+      },
+      {
+        "field_name": "field_disable_booking",
+        "label": "Disable Booking",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_disable_booking.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+      },
+      {
+        "field_name": "field_duration",
+        "label": "Duration",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_duration.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_duration.yml"
+      },
+      {
+        "field_name": "field_featured",
+        "label": "Featured",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_featured.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_featured.yml"
+      },
+      {
+        "field_name": "field_featured_image",
+        "label": "Featured Image",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_featured_image.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_featured_image.yml"
+      },
+      {
+        "field_name": "field_featured_variation",
+        "label": "Featured Variation",
+        "type": "link",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_featured_variation.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_featured_variation.yml"
+      },
+      {
+        "field_name": "field_gallery_label",
+        "label": "Gallery Label",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_gallery_label.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_gallery_label.yml"
+      },
+      {
+        "field_name": "field_location_type",
+        "label": "Location Type",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_location_type.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_location_type.yml"
+      },
+      {
+        "field_name": "field_message_to_customer",
+        "label": "Message to Customer",
+        "type": "string_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_message_to_customer.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_message_to_customer.yml"
+      },
+      {
+        "field_name": "field_meta_tags",
+        "label": "Meta Tags",
+        "type": "metatag",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_meta_tags.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+      },
+      {
+        "field_name": "field_other_infos",
+        "label": "Package Infos",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_other_infos.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_other_infos.yml"
+      },
+      {
+        "field_name": "field_package_type",
+        "label": "Package Type",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_package_type.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_package_type.yml"
+      },
+      {
+        "field_name": "field_pdf",
+        "label": "Attachment",
+        "type": "file",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_pdf.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_pdf.yml"
+      },
+      {
+        "field_name": "field_product_type_comment",
+        "label": "Variation Message",
+        "type": "string_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_product_type_comment.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_product_type_comment.yml"
+      },
+      {
+        "field_name": "field_rating",
+        "label": "Rating",
+        "type": "fivestar",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_rating.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_rating.yml"
+      },
+      {
+        "field_name": "field_region",
+        "label": "Region",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_region.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_region.yml"
+      },
+      {
+        "field_name": "field_sold_out",
+        "label": "Sold Out",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_sold_out.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_sold_out.yml"
+      },
+      {
+        "field_name": "field_special_badge",
+        "label": "Special Badge",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_special_badge.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_special_badge.yml"
+      },
+      {
+        "field_name": "field_unavailable_dates",
+        "label": "Unavailable Dates",
+        "type": "multiple_dates",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.package.field_unavailable_dates.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_unavailable_dates.yml"
+      }
+    ],
+    "relationships": [
+      "field_destination",
+      "field_featured_image",
+      "field_location_type",
+      "field_package_type",
+      "field_pdf",
+      "field_region"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+  },
+  {
+    "entity_type": "commerce_product",
+    "bundle": "room",
+    "name": "Stay",
+    "file": "config/sync/commerce_product.commerce_product_type.room.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Overview",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.body.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+      },
+      {
+        "field_name": "field_addon",
+        "label": "Addon",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_addon.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_addon.yml"
+      },
+      {
+        "field_name": "field_amneties",
+        "label": "Amneties",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_amneties.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_amneties.yml"
+      },
+      {
+        "field_name": "field_availability",
+        "label": "Availability",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_availability.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_availability.yml"
+      },
+      {
+        "field_name": "field_deposit_percentage",
+        "label": "Deposit Percentage",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_deposit_percentage.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+      },
+      {
+        "field_name": "field_destination",
+        "label": "Destination",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_destination.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_destination.yml"
+      },
+      {
+        "field_name": "field_disable_booking",
+        "label": "Disable Booking",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_disable_booking.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+      },
+      {
+        "field_name": "field_featured",
+        "label": "Featured",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_featured.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_featured.yml"
+      },
+      {
+        "field_name": "field_featured_image",
+        "label": "Featured Image",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_featured_image.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_featured_image.yml"
+      },
+      {
+        "field_name": "field_gallery_label",
+        "label": "Gallery Label",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_gallery_label.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_gallery_label.yml"
+      },
+      {
+        "field_name": "field_key_points",
+        "label": "Key Points",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_key_points.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_key_points.yml"
+      },
+      {
+        "field_name": "field_location",
+        "label": "Location",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_location.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_location.yml"
+      },
+      {
+        "field_name": "field_map_embed",
+        "label": "Map Embed",
+        "type": "string_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_map_embed.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_map_embed.yml"
+      },
+      {
+        "field_name": "field_media",
+        "label": "Media",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_media.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_media.yml"
+      },
+      {
+        "field_name": "field_meta_tags",
+        "label": "Meta Tags",
+        "type": "metatag",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_meta_tags.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+      },
+      {
+        "field_name": "field_product_type_comment",
+        "label": "Variation Message",
+        "type": "string_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_product_type_comment.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_product_type_comment.yml"
+      },
+      {
+        "field_name": "field_related_room",
+        "label": "Related Room",
+        "type": "entity_reference",
+        "cardinality": "4",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_related_room.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_related_room.yml"
+      },
+      {
+        "field_name": "field_related_variation",
+        "label": "Related Variation",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_related_variation.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_related_variation.yml"
+      },
+      {
+        "field_name": "field_room_type",
+        "label": "Type",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_room_type.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_room_type.yml"
+      },
+      {
+        "field_name": "field_sold_out",
+        "label": "Sold Out",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_sold_out.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_sold_out.yml"
+      },
+      {
+        "field_name": "field_unavailable_dates",
+        "label": "Unavailable Dates",
+        "type": "multiple_dates",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.room.field_unavailable_dates.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_unavailable_dates.yml"
+      }
+    ],
+    "relationships": [
+      "field_addon",
+      "field_destination",
+      "field_featured_image",
+      "field_media",
+      "field_related_room",
+      "field_related_variation",
+      "field_room_type"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+  },
+  {
+    "entity_type": "commerce_product",
+    "bundle": "trip",
+    "name": "Event",
+    "file": "config/sync/commerce_product.commerce_product_type.trip.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Overview",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.body.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+      },
+      {
+        "field_name": "field_blocks",
+        "label": "Blocks",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_blocks.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_blocks.yml"
+      },
+      {
+        "field_name": "field_date",
+        "label": "Start Date",
+        "type": "datetime",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_date.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_date.yml"
+      },
+      {
+        "field_name": "field_deposit_percentage",
+        "label": "Deposit Percentage",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_deposit_percentage.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+      },
+      {
+        "field_name": "field_destination",
+        "label": "Destination",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_destination.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_destination.yml"
+      },
+      {
+        "field_name": "field_disable_booking",
+        "label": "Disable Booking",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_disable_booking.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+      },
+      {
+        "field_name": "field_duration",
+        "label": "Duration",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_duration.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_duration.yml"
+      },
+      {
+        "field_name": "field_end_date",
+        "label": "End Date",
+        "type": "datetime",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_end_date.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_end_date.yml"
+      },
+      {
+        "field_name": "field_exclusion",
+        "label": "Exclusions",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_exclusion.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_exclusion.yml"
+      },
+      {
+        "field_name": "field_featured_image",
+        "label": "Featured Image",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_featured_image.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_featured_image.yml"
+      },
+      {
+        "field_name": "field_gallery_label",
+        "label": "Gallery Label",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_gallery_label.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_gallery_label.yml"
+      },
+      {
+        "field_name": "field_inclusion",
+        "label": "Inclusions",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_inclusion.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_inclusion.yml"
+      },
+      {
+        "field_name": "field_itenary",
+        "label": "Tour Plan",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_itenary.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_itenary.yml"
+      },
+      {
+        "field_name": "field_key_points",
+        "label": "Key Points",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_key_points.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_key_points.yml"
+      },
+      {
+        "field_name": "field_location_type",
+        "label": "Location Type",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_location_type.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_location_type.yml"
+      },
+      {
+        "field_name": "field_media",
+        "label": "Media",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_media.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_media.yml"
+      },
+      {
+        "field_name": "field_meta_tags",
+        "label": "Meta Tags",
+        "type": "metatag",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_meta_tags.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+      },
+      {
+        "field_name": "field_other_infos",
+        "label": "Event Infos",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_other_infos.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_other_infos.yml"
+      },
+      {
+        "field_name": "field_sold_out",
+        "label": "Sold Out",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_sold_out.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_sold_out.yml"
+      },
+      {
+        "field_name": "field_stock",
+        "label": "Availability",
+        "type": "commerce_stock_level",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.trip.field_stock.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_stock.yml"
+      }
+    ],
+    "relationships": [
+      "field_destination",
+      "field_featured_image",
+      "field_location_type",
+      "field_media"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+  },
+  {
+    "entity_type": "commerce_product",
+    "bundle": "weekend_trip",
+    "name": "Weekend Trip",
+    "file": "config/sync/commerce_product.commerce_product_type.weekend_trip.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Overview",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.body.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.body.yml"
+      },
+      {
+        "field_name": "field_availability",
+        "label": "Availability",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_availability.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_availability.yml"
+      },
+      {
+        "field_name": "field_available_dates",
+        "label": "Available Dates",
+        "type": "multiple_dates",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_available_dates.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_available_dates.yml"
+      },
+      {
+        "field_name": "field_deposit_percentage",
+        "label": "Deposit Percentage",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_deposit_percentage.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_deposit_percentage.yml"
+      },
+      {
+        "field_name": "field_destination",
+        "label": "Destination",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_destination.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_destination.yml"
+      },
+      {
+        "field_name": "field_disable_booking",
+        "label": "Disable Booking",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_disable_booking.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_disable_booking.yml"
+      },
+      {
+        "field_name": "field_duration",
+        "label": "Duration",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_duration.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_duration.yml"
+      },
+      {
+        "field_name": "field_featured_image",
+        "label": "Featured Image",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_featured_image.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_featured_image.yml"
+      },
+      {
+        "field_name": "field_gallery_label",
+        "label": "Gallery Label",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_gallery_label.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_gallery_label.yml"
+      },
+      {
+        "field_name": "field_group_size",
+        "label": "Group of",
+        "type": "string",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_group_size.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_group_size.yml"
+      },
+      {
+        "field_name": "field_itenary",
+        "label": "Tour Plan",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_itenary.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_itenary.yml"
+      },
+      {
+        "field_name": "field_key_points",
+        "label": "Key Points",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_key_points.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_key_points.yml"
+      },
+      {
+        "field_name": "field_media",
+        "label": "Media",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_media.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_media.yml"
+      },
+      {
+        "field_name": "field_meta_tags",
+        "label": "Meta Tags",
+        "type": "metatag",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_meta_tags.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_meta_tags.yml"
+      },
+      {
+        "field_name": "field_organiser",
+        "label": "Organiser",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_organiser.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_organiser.yml"
+      },
+      {
+        "field_name": "field_other_infos",
+        "label": "Trip Infos",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_other_infos.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_other_infos.yml"
+      },
+      {
+        "field_name": "field_pdf",
+        "label": "Attachment",
+        "type": "file",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product.weekend_trip.field_pdf.yml",
+        "storage_file": "config/sync/field.storage.commerce_product.field_pdf.yml"
+      }
+    ],
+    "relationships": [
+      "field_destination",
+      "field_featured_image",
+      "field_media",
+      "field_organiser",
+      "field_pdf"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Commerce product bundle for travel catalog/booking inventory."
+  },
+  {
+    "entity_type": "commerce_product_variation",
+    "bundle": "cab",
+    "name": "Cab",
+    "file": "config/sync/commerce_product.commerce_product_variation_type.cab.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "attribute_pickup_drop",
+        "label": "Pickup & Drop",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.commerce_product_variation.cab.attribute_pickup_drop.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.attribute_pickup_drop.yml"
+      }
+    ],
+    "relationships": [
+      "attribute_pickup_drop"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "commerce_product_variation",
+    "bundle": "default",
+    "name": "Default",
+    "file": "config/sync/commerce_product.commerce_product_variation_type.default.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "commerce_product_variation",
+    "bundle": "package",
+    "name": "Package",
+    "file": "config/sync/commerce_product.commerce_product_variation_type.package.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "attribute_package_type",
+        "label": "Package Type",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.attribute_package_type.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.attribute_package_type.yml"
+      },
+      {
+        "field_name": "field_disable_booking",
+        "label": "Disable Booking",
+        "type": "boolean",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.field_disable_booking.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.field_disable_booking.yml"
+      },
+      {
+        "field_name": "field_exclusion",
+        "label": "Exclusions",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.field_exclusion.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.field_exclusion.yml"
+      },
+      {
+        "field_name": "field_inclusion",
+        "label": "Inclusions",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.field_inclusion.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.field_inclusion.yml"
+      },
+      {
+        "field_name": "field_itenary",
+        "label": "Tour Plan",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.field_itenary.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.field_itenary.yml"
+      },
+      {
+        "field_name": "field_key_points",
+        "label": "Key Points",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.field_key_points.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.field_key_points.yml"
+      },
+      {
+        "field_name": "field_media",
+        "label": "Media",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.field_media.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.field_media.yml"
+      },
+      {
+        "field_name": "field_unavailable_dates",
+        "label": "Unavailable Dates",
+        "type": "multiple_dates",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.field_unavailable_dates.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.field_unavailable_dates.yml"
+      },
+      {
+        "field_name": "field_video_gallery",
+        "label": "Video Gallery",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.field_video_gallery.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.field_video_gallery.yml"
+      },
+      {
+        "field_name": "maximum_order_quantity",
+        "label": "Maximum quantity per order",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.maximum_order_quantity.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.maximum_order_quantity.yml"
+      },
+      {
+        "field_name": "minimum_order_quantity",
+        "label": "Minimum quantity per order",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.commerce_product_variation.package.minimum_order_quantity.yml",
+        "storage_file": "config/sync/field.storage.commerce_product_variation.minimum_order_quantity.yml"
+      }
+    ],
+    "relationships": [
+      "attribute_package_type",
+      "field_media",
+      "field_video_gallery"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "commerce_product_variation",
+    "bundle": "room",
+    "name": "Stay",
+    "file": "config/sync/commerce_product.commerce_product_variation_type.room.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "commerce_product_variation",
+    "bundle": "trip",
+    "name": "Event",
+    "file": "config/sync/commerce_product.commerce_product_variation_type.trip.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "commerce_product_variation",
+    "bundle": "weekend_trip",
+    "name": "Weekend Trip",
+    "file": "config/sync/commerce_product.commerce_product_variation_type.weekend_trip.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "media",
+    "bundle": "audio",
+    "name": "Audio",
+    "file": "config/sync/media.type.audio.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_media_audio_file",
+        "label": "Audio file",
+        "type": "file",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.media.audio.field_media_audio_file.yml",
+        "storage_file": "config/sync/field.storage.media.field_media_audio_file.yml"
+      }
+    ],
+    "relationships": [
+      "field_media_audio_file"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "media",
+    "bundle": "document",
+    "name": "Document",
+    "file": "config/sync/media.type.document.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_media_document",
+        "label": "Document",
+        "type": "file",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.media.document.field_media_document.yml",
+        "storage_file": "config/sync/field.storage.media.field_media_document.yml"
+      }
+    ],
+    "relationships": [
+      "field_media_document"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "media",
+    "bundle": "image",
+    "name": "Image",
+    "file": "config/sync/media.type.image.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_media_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.media.image.field_media_image.yml",
+        "storage_file": "config/sync/field.storage.media.field_media_image.yml"
+      }
+    ],
+    "relationships": [
+      "field_media_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "media",
+    "bundle": "remote_video",
+    "name": "Remote video",
+    "file": "config/sync/media.type.remote_video.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_media_oembed_video",
+        "label": "Video URL",
+        "type": "string",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.media.remote_video.field_media_oembed_video.yml",
+        "storage_file": "config/sync/field.storage.media.field_media_oembed_video.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "media",
+    "bundle": "video",
+    "name": "Video",
+    "file": "config/sync/media.type.video.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_media_video_file",
+        "label": "Video file",
+        "type": "file",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.media.video.field_media_video_file.yml",
+        "storage_file": "config/sync/field.storage.media.field_media_video_file.yml"
+      }
+    ],
+    "relationships": [
+      "field_media_video_file"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "node",
+    "bundle": "article",
+    "name": "Blog",
+    "file": "config/sync/node.type.article.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Body",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.article.body.yml",
+        "storage_file": "config/sync/field.storage.node.body.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.article.field_image.yml",
+        "storage_file": "config/sync/field.storage.node.field_image.yml"
+      },
+      {
+        "field_name": "field_metatags",
+        "label": "Metatags",
+        "type": "metatag",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.article.field_metatags.yml",
+        "storage_file": "config/sync/field.storage.node.field_metatags.yml"
+      },
+      {
+        "field_name": "field_tags",
+        "label": "Tags",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.article.field_tags.yml",
+        "storage_file": "config/sync/field.storage.node.field_tags.yml"
+      }
+    ],
+    "relationships": [
+      "field_image",
+      "field_tags"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Editorial/content bundle."
+  },
+  {
+    "entity_type": "node",
+    "bundle": "destination",
+    "name": "Destination",
+    "file": "config/sync/node.type.destination.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Overview",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.destination.body.yml",
+        "storage_file": "config/sync/field.storage.node.body.yml"
+      },
+      {
+        "field_name": "field_attractions",
+        "label": "Places of Interest",
+        "type": "entity_reference_revisions",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.destination.field_attractions.yml",
+        "storage_file": "config/sync/field.storage.node.field_attractions.yml"
+      },
+      {
+        "field_name": "field_featured",
+        "label": "Featured",
+        "type": "list_string",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.destination.field_featured.yml",
+        "storage_file": "config/sync/field.storage.node.field_featured.yml"
+      },
+      {
+        "field_name": "field_icon",
+        "label": "Icon",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.destination.field_icon.yml",
+        "storage_file": "config/sync/field.storage.node.field_icon.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.destination.field_image.yml",
+        "storage_file": "config/sync/field.storage.node.field_image.yml"
+      },
+      {
+        "field_name": "field_metatags",
+        "label": "Metatags",
+        "type": "metatag",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.destination.field_metatags.yml",
+        "storage_file": "config/sync/field.storage.node.field_metatags.yml"
+      },
+      {
+        "field_name": "field_region",
+        "label": "Region",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.destination.field_region.yml",
+        "storage_file": "config/sync/field.storage.node.field_region.yml"
+      }
+    ],
+    "relationships": [
+      "field_icon",
+      "field_image",
+      "field_region"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Editorial/content bundle."
+  },
+  {
+    "entity_type": "node",
+    "bundle": "flexslider_example",
+    "name": "FlexSlider Example",
+    "file": "config/sync/node.type.flexslider_example.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_flexslider_example_image",
+        "label": "FlexSlider Example Image",
+        "type": "image",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.flexslider_example.field_flexslider_example_image.yml",
+        "storage_file": "config/sync/field.storage.node.field_flexslider_example_image.yml"
+      },
+      {
+        "field_name": "field_flexslider_example_slidesh",
+        "label": "FlexSlider Example Slideshow",
+        "type": "image",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.flexslider_example.field_flexslider_example_slidesh.yml",
+        "storage_file": "config/sync/field.storage.node.field_flexslider_example_slidesh.yml"
+      }
+    ],
+    "relationships": [
+      "field_flexslider_example_image",
+      "field_flexslider_example_slidesh"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Editorial/content bundle."
+  },
+  {
+    "entity_type": "node",
+    "bundle": "page",
+    "name": "Page",
+    "file": "config/sync/node.type.page.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Body",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.page.body.yml",
+        "storage_file": "config/sync/field.storage.node.body.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.page.field_image.yml",
+        "storage_file": "config/sync/field.storage.node.field_image.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Editorial/content bundle."
+  },
+  {
+    "entity_type": "node",
+    "bundle": "team",
+    "name": "Team",
+    "file": "config/sync/node.type.team.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Bio",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.team.body.yml",
+        "storage_file": "config/sync/field.storage.node.body.yml"
+      },
+      {
+        "field_name": "field_designation",
+        "label": "Designation",
+        "type": "string",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.node.team.field_designation.yml",
+        "storage_file": "config/sync/field.storage.node.field_designation.yml"
+      },
+      {
+        "field_name": "field_email",
+        "label": "Email",
+        "type": "email",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.team.field_email.yml",
+        "storage_file": "config/sync/field.storage.node.field_email.yml"
+      },
+      {
+        "field_name": "field_facebook",
+        "label": "Facebook",
+        "type": "link",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.team.field_facebook.yml",
+        "storage_file": "config/sync/field.storage.node.field_facebook.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.team.field_image.yml",
+        "storage_file": "config/sync/field.storage.node.field_image.yml"
+      },
+      {
+        "field_name": "field_instagram",
+        "label": "Instagram",
+        "type": "link",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.team.field_instagram.yml",
+        "storage_file": "config/sync/field.storage.node.field_instagram.yml"
+      },
+      {
+        "field_name": "field_linkedin",
+        "label": "LinkedIn",
+        "type": "link",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.team.field_linkedin.yml",
+        "storage_file": "config/sync/field.storage.node.field_linkedin.yml"
+      },
+      {
+        "field_name": "field_x",
+        "label": "X",
+        "type": "link",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.team.field_x.yml",
+        "storage_file": "config/sync/field.storage.node.field_x.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Editorial/content bundle."
+  },
+  {
+    "entity_type": "node",
+    "bundle": "testimonial",
+    "name": "Testimonial",
+    "file": "config/sync/node.type.testimonial.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "body",
+        "label": "Testimony",
+        "type": "text_with_summary",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.testimonial.body.yml",
+        "storage_file": "config/sync/field.storage.node.body.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "DP",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.testimonial.field_image.yml",
+        "storage_file": "config/sync/field.storage.node.field_image.yml"
+      },
+      {
+        "field_name": "field_location",
+        "label": "Location",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.testimonial.field_location.yml",
+        "storage_file": "config/sync/field.storage.node.field_location.yml"
+      },
+      {
+        "field_name": "field_star_rating",
+        "label": "Star Rating",
+        "type": "fivestar",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.node.testimonial.field_star_rating.yml",
+        "storage_file": "config/sync/field.storage.node.field_star_rating.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Editorial/content bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "accordion",
+    "name": "Accordion",
+    "file": "config/sync/paragraphs.paragraphs_type.accordion.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_text",
+        "label": "Text",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.accordion.field_text.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+      },
+      {
+        "field_name": "field_title",
+        "label": "Title",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.accordion.field_title.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_title.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "cab_points",
+    "name": "Cab Points",
+    "file": "config/sync/paragraphs.paragraphs_type.cab_points.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_cab_key",
+        "label": "Key",
+        "type": "list_string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.cab_points.field_cab_key.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_cab_key.yml"
+      },
+      {
+        "field_name": "field_value",
+        "label": "Value",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.cab_points.field_value.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_value.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "image_and_text",
+    "name": "Image and Text",
+    "file": "config/sync/paragraphs.paragraphs_type.image_and_text.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.image_and_text.field_image.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_image.yml"
+      },
+      {
+        "field_name": "field_text",
+        "label": "Text",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.image_and_text.field_text.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "image_gallery",
+    "name": "Image Gallery",
+    "file": "config/sync/paragraphs.paragraphs_type.image_gallery.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_media_image",
+        "label": "Image",
+        "type": "entity_reference",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.image_gallery.field_media_image.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_media_image.yml"
+      }
+    ],
+    "relationships": [
+      "field_media_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "itenary",
+    "name": "Itenary",
+    "file": "config/sync/paragraphs.paragraphs_type.itenary.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_text",
+        "label": "Text",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.itenary.field_text.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+      },
+      {
+        "field_name": "field_title",
+        "label": "Title",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.itenary.field_title.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_title.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "left_image_with_text",
+    "name": "Left Image with Text",
+    "file": "config/sync/paragraphs.paragraphs_type.left_image_with_text.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.left_image_with_text.field_image.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_image.yml"
+      },
+      {
+        "field_name": "field_text",
+        "label": "Text",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.left_image_with_text.field_text.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "package_points",
+    "name": "Package Points",
+    "file": "config/sync/paragraphs.paragraphs_type.package_points.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_key",
+        "label": "Key",
+        "type": "entity_reference",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.package_points.field_key.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_key.yml"
+      },
+      {
+        "field_name": "field_value",
+        "label": "Value",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.package_points.field_value.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_value.yml"
+      }
+    ],
+    "relationships": [
+      "field_key"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "right_image_with_text",
+    "name": "Right Image with text",
+    "file": "config/sync/paragraphs.paragraphs_type.right_image_with_text.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "-1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.right_image_with_text.field_image.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_image.yml"
+      },
+      {
+        "field_name": "field_text",
+        "label": "Text",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.right_image_with_text.field_text.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "text_only",
+    "name": "Text Only",
+    "file": "config/sync/paragraphs.paragraphs_type.text_only.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_text",
+        "label": "Text",
+        "type": "text_long",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.text_only.field_text.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_text.yml"
+      },
+      {
+        "field_name": "field_title",
+        "label": "Title",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.text_only.field_title.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_title.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "paragraph",
+    "bundle": "title_only",
+    "name": "Title Only",
+    "file": "config/sync/paragraphs.paragraphs_type.title_only.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_title",
+        "label": "Title",
+        "type": "string",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.paragraph.title_only.field_title.yml",
+        "storage_file": "config/sync/field.storage.paragraph.field_title.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "profile",
+    "bundle": "customer",
+    "name": "Customer",
+    "file": "config/sync/profile.type.customer.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "address",
+        "label": "Address",
+        "type": "address",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.profile.customer.address.yml",
+        "storage_file": "config/sync/field.storage.profile.address.yml"
+      },
+      {
+        "field_name": "field_alternate_mobile_no",
+        "label": "Alternate Mobile No.",
+        "type": "phone_number",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.profile.customer.field_alternate_mobile_no.yml",
+        "storage_file": "config/sync/field.storage.profile.field_alternate_mobile_no.yml"
+      },
+      {
+        "field_name": "field_mobile_no",
+        "label": "Mobile No.",
+        "type": "phone_number",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.profile.customer.field_mobile_no.yml",
+        "storage_file": "config/sync/field.storage.profile.field_mobile_no.yml"
+      }
+    ],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Drupal configuration entity bundle."
+  },
+  {
+    "entity_type": "taxonomy_term",
+    "bundle": "location_type",
+    "name": "Location Type",
+    "file": "config/sync/taxonomy.vocabulary.location_type.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Classification vocabulary."
+  },
+  {
+    "entity_type": "taxonomy_term",
+    "bundle": "package_key",
+    "name": "Package Key",
+    "file": "config/sync/taxonomy.vocabulary.package_key.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.taxonomy_term.package_key.field_image.yml",
+        "storage_file": "config/sync/field.storage.taxonomy_term.field_image.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Classification vocabulary."
+  },
+  {
+    "entity_type": "taxonomy_term",
+    "bundle": "package_type",
+    "name": "Package Type",
+    "file": "config/sync/taxonomy.vocabulary.package_type.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Classification vocabulary."
+  },
+  {
+    "entity_type": "taxonomy_term",
+    "bundle": "partners",
+    "name": "Partners",
+    "file": "config/sync/taxonomy.vocabulary.partners.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_logo",
+        "label": "Logo",
+        "type": "image",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.taxonomy_term.partners.field_logo.yml",
+        "storage_file": "config/sync/field.storage.taxonomy_term.field_logo.yml"
+      }
+    ],
+    "relationships": [
+      "field_logo"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Classification vocabulary."
+  },
+  {
+    "entity_type": "taxonomy_term",
+    "bundle": "regions",
+    "name": "Regions",
+    "file": "config/sync/taxonomy.vocabulary.regions.yml",
+    "status": "true",
+    "fields": [
+      {
+        "field_name": "field_deposit_percentage",
+        "label": "Deposit Percentage",
+        "type": "integer",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.taxonomy_term.regions.field_deposit_percentage.yml",
+        "storage_file": "config/sync/field.storage.taxonomy_term.field_deposit_percentage.yml"
+      },
+      {
+        "field_name": "field_image",
+        "label": "Image",
+        "type": "image",
+        "cardinality": "1",
+        "required": "true",
+        "config_file": "config/sync/field.field.taxonomy_term.regions.field_image.yml",
+        "storage_file": "config/sync/field.storage.taxonomy_term.field_image.yml"
+      },
+      {
+        "field_name": "field_metatags",
+        "label": "Metatags",
+        "type": "metatag",
+        "cardinality": "1",
+        "required": "false",
+        "config_file": "config/sync/field.field.taxonomy_term.regions.field_metatags.yml",
+        "storage_file": "config/sync/field.storage.taxonomy_term.field_metatags.yml"
+      }
+    ],
+    "relationships": [
+      "field_image"
+    ],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Classification vocabulary."
+  },
+  {
+    "entity_type": "taxonomy_term",
+    "bundle": "room_type",
+    "name": "Room Type",
+    "file": "config/sync/taxonomy.vocabulary.room_type.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Classification vocabulary."
+  },
+  {
+    "entity_type": "taxonomy_term",
+    "bundle": "tags",
+    "name": "Tags",
+    "file": "config/sync/taxonomy.vocabulary.tags.yml",
+    "status": "true",
+    "fields": [],
+    "relationships": [],
+    "validation": "Confirmed field required/cardinality metadata where present in field.field and field.storage config.",
+    "business_purpose": "Classification vocabulary."
+  }
+]

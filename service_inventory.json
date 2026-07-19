@@ -1,0 +1,90 @@
+{
+  "registered_services": [],
+  "classes_without_service_registration": [
+    {
+      "kind": "class",
+      "class": "Drupal\\drupal_commerce_razorpay\\AutoWebhook",
+      "short_name": "AutoWebhook",
+      "file": "modules/custom/drupal_commerce_razorpay/src/AutoWebhook.php",
+      "line": 8,
+      "extends": null,
+      "implements": [],
+      "methods": [
+        {
+          "name": "generateWebhookSecret",
+          "visibility": "protected",
+          "line": 22
+        },
+        {
+          "name": "autoEnableWebhook",
+          "visibility": "public",
+          "line": 29
+        }
+      ],
+      "service_id": null,
+      "registration": "No custom services.yml registration found; listed as utility/class only."
+    },
+    {
+      "kind": "class",
+      "class": "Drupal\\drupal_commerce_razorpay\\PluginForm\\RazorpayForm",
+      "short_name": "RazorpayForm",
+      "file": "modules/custom/drupal_commerce_razorpay/src/PluginForm/RazorpayForm.php",
+      "line": 16,
+      "extends": "BasePaymentOffsiteForm",
+      "implements": [],
+      "methods": [
+        {
+          "name": "createOrGetRazorpayOrderId",
+          "visibility": "public",
+          "line": 33
+        },
+        {
+          "name": "getRazorpayApiInstance",
+          "visibility": "protected",
+          "line": 156
+        },
+        {
+          "name": "setPaymentConfigAndMessenger",
+          "visibility": "protected",
+          "line": 168
+        },
+        {
+          "name": "generateCheckoutForm",
+          "visibility": "public",
+          "line": 178
+        },
+        {
+          "name": "buildConfigurationForm",
+          "visibility": "public",
+          "line": 210
+        }
+      ],
+      "service_id": null,
+      "registration": "No custom services.yml registration found; listed as utility/class only."
+    },
+    {
+      "kind": "class",
+      "class": "to",
+      "short_name": "to",
+      "file": "themes/custom/tripzee/tripzee.theme",
+      "line": 7,
+      "extends": null,
+      "implements": [],
+      "methods": [],
+      "service_id": null,
+      "registration": "No custom services.yml registration found; listed as utility/class only."
+    },
+    {
+      "kind": "class",
+      "class": "to",
+      "short_name": "to",
+      "file": "themes/custom/tripzee/tripzee.theme",
+      "line": 7,
+      "extends": null,
+      "implements": [],
+      "methods": [],
+      "service_id": null,
+      "registration": "No custom services.yml registration found; listed as utility/class only."
+    }
+  ]
+}

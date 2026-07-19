@@ -1,0 +1,87 @@
+[
+  {
+    "name": "drupal_commerce_razorpay.capturePayment",
+    "file": "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml",
+    "line": 1,
+    "path": "/capturePayment",
+    "controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\RzpController::capturePayment",
+    "methods": [],
+    "requirements": {
+      "_access": "TRUE"
+    },
+    "defaults": {
+      "_controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\RzpController::capturePayment"
+    },
+    "module": "drupal_commerce_razorpay",
+    "http_method": "ANY",
+    "requirement_label": "_access: TRUE",
+    "permission": null,
+    "authentication": "No permission requirement declared"
+  },
+  {
+    "name": "drupal_commerce_razorpay.ipn_handler",
+    "file": "modules/custom/drupal_commerce_razorpay/drupal_commerce_razorpay.routing.yml",
+    "line": 9,
+    "path": "/payment/ipn-handler",
+    "controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\IPNController::handleIPN",
+    "methods": [
+      "POST"
+    ],
+    "requirements": {
+      "_csrf_token": "TRUE"
+    },
+    "defaults": {
+      "_controller": "\\Drupal\\drupal_commerce_razorpay\\Controller\\IPNController::handleIPN",
+      "_title": "IPN Handler"
+    },
+    "module": "drupal_commerce_razorpay",
+    "http_method": "POST",
+    "requirement_label": "_csrf_token: TRUE",
+    "permission": null,
+    "authentication": "CSRF token requirement"
+  },
+  {
+    "name": "mobile_verify.generate_otp",
+    "file": "modules/custom/mobile_verify/mobile_verify.routing.yml",
+    "line": 1,
+    "path": "/generate-otp",
+    "controller": "\\Drupal\\mobile_verify\\Controller\\MobileVerifyController::processLogin",
+    "methods": [
+      "POST"
+    ],
+    "requirements": {
+      "_access": "TRUE"
+    },
+    "defaults": {
+      "_controller": "\\Drupal\\mobile_verify\\Controller\\MobileVerifyController::processLogin",
+      "_title": "Request OTP"
+    },
+    "module": "mobile_verify",
+    "http_method": "POST",
+    "requirement_label": "_access: TRUE",
+    "permission": null,
+    "authentication": "No permission requirement declared"
+  },
+  {
+    "name": "simple_login.generate_otp",
+    "file": "modules/custom/simple_login/simple_login.routing.yml",
+    "line": 1,
+    "path": "/generate-otp",
+    "controller": "\\Drupal\\simple_login\\Controller\\SimpleLoginController::processLogin",
+    "methods": [
+      "POST"
+    ],
+    "requirements": {
+      "_access": "TRUE"
+    },
+    "defaults": {
+      "_controller": "\\Drupal\\simple_login\\Controller\\SimpleLoginController::processLogin",
+      "_title": "Request OTP"
+    },
+    "module": "simple_login",
+    "http_method": "POST",
+    "requirement_label": "_access: TRUE",
+    "permission": null,
+    "authentication": "No permission requirement declared"
+  }
+]
